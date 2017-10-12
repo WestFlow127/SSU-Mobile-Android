@@ -8,10 +8,10 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
@@ -22,29 +22,22 @@ import com.app.ssumobile.ssumobile_android.R;
 import com.app.ssumobile.ssumobile_android.models.BuildingModel;
 import com.app.ssumobile.ssumobile_android.models.DepartmentModel;
 import com.app.ssumobile.ssumobile_android.models.FacStaffModel;
+import com.app.ssumobile.ssumobile_android.models.SchoolModel;
+import com.app.ssumobile.ssumobile_android.providers.DataProvider;
 
-import java.net.HttpURLConnection;
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.net.URL;
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
 import java.util.ArrayList;
-
-import javax.net.ssl.HttpsURLConnection;
+import java.util.Collections;
+import java.util.Comparator;
 
 
 public class DepartmentsActivity extends AppCompatActivity {
-    String body;
-
     ArrayAdapter adapter;
-    //JSONtoModelProvider jsonConverter;
+    DataProvider Dal = new DataProvider();
 
     ArrayList<DepartmentModel> contactsList = new ArrayList<>();
-    ArrayList<FacStaffModel> facStaffList1 = new ArrayList<>();
+    ArrayList<FacStaffModel> facStaffList = new ArrayList<>();
     ArrayList<BuildingModel> buildingList = new ArrayList<>();
+    ArrayList<SchoolModel> schoolList = new ArrayList<>();
 
     EditText inputSearch;
 
@@ -54,6 +47,10 @@ public class DepartmentsActivity extends AppCompatActivity {
         setContentView(R.layout.directory_view);
         // Set input search bar
         inputSearch = (EditText) findViewById(R.id.input_search);
+        
+        // Open Keyboard
+        InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+        imm.toggleSoftInput(InputMethodManager.SHOW_FORCED, InputMethodManager.HIDE_IMPLICIT_ONLY);
 
         adapter = new ArrayAdapter<>(this, R.layout.activity_listview, contactsList);
         ListView listView = (ListView) findViewById(R.id.mobile_list);
@@ -74,7 +71,7 @@ public class DepartmentsActivity extends AppCompatActivity {
 
         // get data into listview in the background
         new ProgressTask(DepartmentsActivity.this).execute();
-
+        adapter.notifyDataSetChanged(); // update cards
     }
 
     @Override
@@ -98,65 +95,6 @@ public class DepartmentsActivity extends AppCompatActivity {
 
             }
         });
-
-//        Thread runner = new Thread(new Runnable(){
-//            public void run()  {
-//                try {
-//                    sendGet("https://moonlight.cs.sonoma.edu/ssumobile/1_0/directory.py");
-//                } catch (Throwable t) {
-//                    System.out.println(t.getCause());
-//                }
-//            }
-//        });
-//        runner.start();
-//
-//        try {
-//            runner.join();
-//            adapter.notifyDataSetChanged(); // update cards
-//        } catch (InterruptedException e) {
-//            e.printStackTrace();
-//        }
-
-        // Set the building name for each department
-//        Thread runner2 = new Thread(new Runnable() {
-//            @Override
-//            public void run() {
-//                for(int i = 0; i < buildingList.size(); ++i) {
-//                    for (int j = 0; j < contactsList.size(); ++j) {
-//                        if ( buildingList.get(i).id.equals( contactsList.get(j).building ) )
-//                            contactsList.get(j).buildingName = buildingList.get(i).name;
-//                    }
-//                }
-//            }
-//        });
-//        runner2.start();
-//
-//        try {
-//            runner2.join();
-//            adapter.notifyDataSetChanged(); // update cards
-//        } catch (InterruptedException e) {
-//            e.printStackTrace();
-//        }
-//
-//        Thread runner3 = new Thread(new Runnable() {
-//            @Override
-//            public void run() {
-//                for( int i = 0; i < facStaffList1.size(); ++i ){
-//                    for( int k = 0; k < contactsList.size(); ++k ){
-//                        if(contactsList.get(k).id.equals(facStaffList1.get(i).department ))
-//                            contactsList.get(k).getFacStaffList().add( facStaffList1.get(i) );
-//                    }
-//                }
-//            }
-//        });
-//        runner3.start();
-//
-//        try {
-//            runner3.join();
-//            adapter.notifyDataSetChanged(); // update cards
-//        } catch (InterruptedException e) {
-//            e.printStackTrace();
-//        }
     }
 
     @Override
@@ -218,106 +156,6 @@ public class DepartmentsActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    // HTTP GET request
-    private void sendGet(String url) throws Exception {
-
-        final String USER_AGENT = "Mozilla/5.0";
-
-        URL obj = new URL(url);
-        HttpsURLConnection con = (HttpsURLConnection) obj.openConnection();
-        con.setRequestMethod("GET");  // optional default is GET
-        con.setRequestProperty("User-Agent", USER_AGENT); //add request header
-        con.setHostnameVerifier(org.apache.http.conn.ssl.SSLSocketFactory.ALLOW_ALL_HOSTNAME_VERIFIER);
-
-        BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
-        String inputLine;
-        StringBuffer response = new StringBuffer();
-
-        while ((inputLine = in.readLine()) != null) {
-            response.append(inputLine);
-        }
-        in.close();
-
-        body = response.toString();
-
-     //   parseOutEvents();
-    }
-
-
-    // parse out events from body
-    private void parseOutEvents() throws org.json.JSONException {
-        System.out.println("in parseOutEvents()");
-
-
-        JSONObject myjson = new JSONObject(body);
-        JSONArray the_json_array = myjson.getJSONArray("Department");
-        JSONArray building_json_array = myjson.getJSONArray("Building");
-        JSONArray facStaff_json_array = myjson.getJSONArray("Person");
-        for (int i = 0; i < the_json_array.length(); i++) {
-            contactsList.add(convertDeptJSONtoModel(the_json_array.getJSONObject(i)));
-        }
-        for (int i = 0; i < building_json_array.length(); i++) {
-            buildingList.add(convertBuildJSONtoModel(building_json_array.getJSONObject(i)));
-        }
-        for (int i = 0; i < facStaff_json_array.length(); i++) {
-            facStaffList1.add(convertPersonJSONtoModel(facStaff_json_array.getJSONObject(i)));
-        }
-    }
-
-    // get attributes of event string into an event
-    public DepartmentModel convertDeptJSONtoModel(JSONObject s) throws org.json.JSONException {
-        DepartmentModel currentContact = new DepartmentModel();
-
-        currentContact.ac = s.getString("ac");
-        currentContact.office = s.getString("office");
-        currentContact.Created = s.getString("Created");
-        currentContact.site = s.getString("site");
-        currentContact.Modified = s.getString("Modified");
-        currentContact.phone = s.getString("phone");
-        currentContact.chair = s.getString("chair");
-        currentContact.id = s.getString("id");
-        currentContact.building = s.getString("building");
-        currentContact.school = s.getString("school");
-        currentContact.displayName = s.getString("displayName");
-        currentContact.name = s.getString("name");
-        currentContact.Deleted = s.getString("Deleted");
-
-        return currentContact;
-    }
-
-    public BuildingModel convertBuildJSONtoModel(JSONObject s) throws org.json.JSONException {
-        BuildingModel currentContact = new BuildingModel();
-
-        currentContact.Created = s.getString("Created");
-        currentContact.Modified = s.getString("Modified");
-        currentContact.id = s.getString("id");
-        currentContact.name = s.getString("name");
-        currentContact.Deleted = s.getString("Deleted");
-
-        return currentContact;
-    }
-
-    // get attributes of event string into an event
-    public FacStaffModel convertPersonJSONtoModel(JSONObject s) throws org.json.JSONException {
-        FacStaffModel currentContact = new FacStaffModel();
-
-        currentContact.office = s.getString("office");
-        currentContact.Created = s.getString("Created");
-        currentContact.site = s.getString("site");
-        currentContact.Modified = s.getString("Modified");
-        currentContact.phone = s.getString("phone");
-        currentContact.id = s.getString("id");
-        currentContact.building = s.getString("building");
-        currentContact.firstName = s.getString("firstName");
-        currentContact.title = s.getString("title");
-        currentContact.lastName = s.getString("lastName");
-        currentContact.department = s.getString("department");
-        currentContact.email = s.getString("email");
-
-        return currentContact;
-    }
-
-
     private class ProgressTask extends AsyncTask<String, Void, Boolean> {
         private ProgressDialog dialog;
         private DepartmentsActivity activity;
@@ -340,7 +178,6 @@ public class DepartmentsActivity extends AppCompatActivity {
             this.dialog.show();
         }
 
-
         @Override
         protected void onPostExecute(final Boolean success) {
             // after downloading and parsing
@@ -350,10 +187,10 @@ public class DepartmentsActivity extends AppCompatActivity {
                         contactsList.get(j).buildingName = buildingList.get(i).name;
                 }
             }
-            for (int i = 0; i < facStaffList1.size(); ++i) {
+            for (int i = 0; i < facStaffList.size(); ++i) {
                 for (int k = 0; k < contactsList.size(); ++k) {
-                    if (contactsList.get(k).id.equals(facStaffList1.get(i).department))
-                        contactsList.get(k).getFacStaffList().add(facStaffList1.get(i));
+                    if (contactsList.get(k).id.equals(facStaffList.get(i).department))
+                        contactsList.get(k).getFacStaffList().add(facStaffList.get(i));
                 }
             }
             adapter.notifyDataSetChanged(); // update cards
@@ -369,33 +206,19 @@ public class DepartmentsActivity extends AppCompatActivity {
             }
         }
 
-
-        private void trysendGet(){
-            try {
-                sendGet("https://moonlight.cs.sonoma.edu/ssumobile/1_0/directory.py");
-            } catch (Throwable t) {
-                System.out.println(t.getCause());
-            }
-        }
-
-        private void tryparseOutEvents(){
-            try {
-                parseOutEvents();
-            } catch (JSONException e) {
-                e.printStackTrace();
-            }
-        }
-
-
         protected Boolean doInBackground(final String... args) {
-
             this.dialog.setMessage("Downloading data...");
-            trysendGet();
 
-            tryparseOutEvents();
+            Dal.getData(contactsList, facStaffList, buildingList, schoolList);
+
+            Collections.sort(contactsList, new Comparator<DepartmentModel>() {
+                @Override
+                public int compare(DepartmentModel lhs, DepartmentModel rhs) {
+                    return lhs.displayName.compareTo(rhs.displayName);
+                }
+            });
 
             return true;
         }
-
     }
 }

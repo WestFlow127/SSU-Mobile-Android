@@ -4,25 +4,17 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
-import android.view.Window;
-import android.webkit.WebView;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.FrameLayout;
-import android.widget.ImageView;
 import android.widget.ListView;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import com.app.ssumobile.ssumobile_android.R;
 import com.app.ssumobile.ssumobile_android.models.DepartmentModel;
 import com.app.ssumobile.ssumobile_android.models.FacStaffModel;
@@ -108,13 +100,13 @@ public class DepartmentModelActivity extends AppCompatActivity {
             String noBuilding ="No building available";
             BuildingButton.setText(noBuilding);
         }
-        if( !d.site.isEmpty() )
+        if( !d.site.equals("null") && !d.site.isEmpty() )
             WebSite.setText(d.site);
         else{
             String noSite = "No website available";
             WebSite.setText(noSite);
         }
-        if( !d.phone.isEmpty() )
+        if( !d.phone.equals("null") && !d.phone.isEmpty() )
             PhoneButton.setText(d.phone);
         else{
             String noPhone = "No phone available";

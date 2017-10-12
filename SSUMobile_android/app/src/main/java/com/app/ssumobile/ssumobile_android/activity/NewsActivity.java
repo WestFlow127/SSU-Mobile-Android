@@ -40,7 +40,9 @@ public class NewsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_news);
         mRecyclerView = (RecyclerView) findViewById(R.id.news_recycler_view);
         mRecyclerView.setHasFixedSize(true);
+
         Context c = getApplicationContext();
+
         mLayoutManager = new LinearLayoutManager(c);
         mRecyclerView.setLayoutManager(mLayoutManager);
 
