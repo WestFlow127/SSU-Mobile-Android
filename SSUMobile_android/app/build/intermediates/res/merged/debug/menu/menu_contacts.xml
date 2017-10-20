@@ -5,4 +5,4 @@
     tools:context="com.app.ssumobile.ssumobile_android.activity.DepartmentModelActivity">
     <item android:id="@+id/action_settings" android:title="@string/action_settings"
         android:orderInCategory="100" app:showAsAction="never" />
-</menu><!-- From: file:/home/ben/school/370/Repositories/App/SSUMobile_android/app/src/main/res/menu/menu_contacts.xml -->
+</menu>

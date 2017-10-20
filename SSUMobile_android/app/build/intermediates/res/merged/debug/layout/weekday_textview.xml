@@ -4,4 +4,4 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    style="?styleCaldroidWeekdayView"/><!-- From: file:/Users/thomasdao/Documents/workspace/Caldroid/caldroid/src/main/res/layout/weekday_textview.xml --><!-- From: file:/home/ben/school/370/Repositories/App/SSUMobile_android/app/build/intermediates/exploded-aar/com.roomorama/caldroid/2.2.1/res/layout/weekday_textview.xml -->
+    style="?styleCaldroidWeekdayView"/><!-- From: file:/Users/thomasdao/Documents/workspace/Caldroid/caldroid/src/main/res/layout/weekday_textview.xml -->

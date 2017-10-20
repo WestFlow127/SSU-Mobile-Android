@@ -12,31 +12,18 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
+
 import com.app.ssumobile.ssumobile_android.R;
 import com.app.ssumobile.ssumobile_android.models.DepartmentModel;
 import com.app.ssumobile.ssumobile_android.models.FacStaffModel;
+import com.app.ssumobile.ssumobile_android.providers.DataProvider;
 
-import org.json.JSONArray;
-import org.json.JSONObject;
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
-import java.net.URL;
 import java.util.ArrayList;
 
-import javax.net.ssl.HttpsURLConnection;
-
 public class FacultyStaffActivity extends AppCompatActivity {
-
-    String body;
-
+    DataProvider Dal;
     ArrayAdapter adapter;
-    //JSONtoModelProvider jsonConverter = new JSONtoModelProvider();
-
     EditText inputSearch;
-
-    ArrayList<FacStaffModel> contactsList = new ArrayList<>();
-    ArrayList<DepartmentModel> departmentsList = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,7 +32,13 @@ public class FacultyStaffActivity extends AppCompatActivity {
 
         inputSearch = (EditText) findViewById(R.id.input_search);
 
-        adapter = new ArrayAdapter<>(this, R.layout.activity_listview, contactsList);
+        Bundle data = getIntent().getExtras();
+        Dal.Fac = (ArrayList<FacStaffModel>) data.getSerializable("dal.f");
+        Dal.Dep = (ArrayList<DepartmentModel>) data.getSerializable("dal.d");
+
+        if(Dal.Fac != null)
+            adapter = new ArrayAdapter<>(this, R.layout.activity_listview, Dal.Fac);
+
         ListView listView = (ListView) findViewById(R.id.mobile_list);
         listView.setAdapter(adapter);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -77,7 +70,6 @@ public class FacultyStaffActivity extends AppCompatActivity {
 
             @Override
             public void afterTextChanged(Editable s) {
-
             }
         });
     }
@@ -85,41 +77,23 @@ public class FacultyStaffActivity extends AppCompatActivity {
     @Override
     protected void onStart(){
         super.onStart();
-        Thread runner = new Thread(new Runnable(){
-            public void run()  {
-                try {
-                    sendGet("https://moonlight.cs.sonoma.edu/ssumobile/1_0/directory.py");
-                } catch (Throwable t) {
-                    System.out.println(t.getCause());
-                }
-            }
-        });
-        runner.start();
-        try {
-            runner.join();
-            adapter.notifyDataSetChanged(); // update cards
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        System.out.println("in onstart()");
-
         // Set the FacStaff Department to it's respective name
-        Thread runner2 = new Thread(new Runnable() {
+        Thread runner = new Thread(new Runnable() {
             @Override
             public void run() {
-                for( int i = 0; i < contactsList.size(); i++ ){
-                    for( int j = 0; j < departmentsList.size(); j++){
-                        if( contactsList.get(i).department.equals( departmentsList.get(j).id ) ) {
-                            if (departmentsList.get(j).displayName != null)
-                                contactsList.get(i).department = departmentsList.get(j).displayName;
+                for( int i = 0; i < Dal.Fac.size(); i++ ){
+                    for( int j = 0; j < Dal.Dep.size(); j++){
+                        if( Dal.Fac.get(i).department.equals( Dal.Dep.get(j).id ) ) {
+                            if (Dal.Dep.get(j).displayName != null)
+                                Dal.Fac.get(i).department = Dal.Dep.get(j).displayName;
                             else
-                                contactsList.get(i).department = departmentsList.get(j).name;
+                                Dal.Fac.get(i).department = Dal.Dep.get(j).name;
                         }
                     }
                 }
             }
         });
-        runner2.start();
+        runner.start();
     }
 
     @Override
@@ -141,6 +115,9 @@ public class FacultyStaffActivity extends AppCompatActivity {
                     @Override
                     public void run() {
                         Intent Dintent = new Intent(FacultyStaffActivity.this, DepartmentsActivity.class);
+                        Bundle B = new Bundle();
+                        B.putSerializable("dal.d", Dal.Dep);
+                        Dintent.putExtras(B);
                         finish();
                         startActivity(Dintent);
                     }
@@ -153,6 +130,9 @@ public class FacultyStaffActivity extends AppCompatActivity {
                     @Override
                     public void run() {
                         Intent Bintent = new Intent(FacultyStaffActivity.this, BuildingsActivity.class);
+                        Bundle B = new Bundle();
+                        B.putSerializable("dal.b", Dal.Bui);
+                        Bintent.putExtras(B);
                         finish();
                         startActivity(Bintent);
                     }
@@ -165,6 +145,9 @@ public class FacultyStaffActivity extends AppCompatActivity {
                     @Override
                     public void run() {
                         Intent Sintent = new Intent(FacultyStaffActivity.this, SchoolsActivity.class);
+                        Bundle B = new Bundle();
+                        B.putSerializable("dal.s", Dal.Sch);
+                        Sintent.putExtras(B);
                         finish();
                         startActivity(Sintent);
                     }
@@ -179,87 +162,5 @@ public class FacultyStaffActivity extends AppCompatActivity {
                 return true;
         }
         return super.onOptionsItemSelected(item);
-    }
-
-    // HTTP GET request
-    private void sendGet(String url) throws Exception {
-
-        final String USER_AGENT = "Mozilla/5.0";
-
-        URL obj = new URL(url);
-        HttpsURLConnection con = (HttpsURLConnection) obj.openConnection();
-        con.setRequestMethod("GET");  // optional default is GET
-        con.setRequestProperty("User-Agent", USER_AGENT); //add request header
-        con.setHostnameVerifier(org.apache.http.conn.ssl.SSLSocketFactory.ALLOW_ALL_HOSTNAME_VERIFIER);
-
-
-        BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
-        String inputLine;
-        StringBuffer response = new StringBuffer();
-
-        while ((inputLine = in.readLine()) != null) {response.append(inputLine);}
-        in.close();
-
-        body = response.toString();
-        parseOutEvents();
-    }
-
-
-    // parse out events from body
-    private void parseOutEvents() throws org.json.JSONException {
-
-        JSONObject myjson = new JSONObject(body);
-        JSONArray dept_array = myjson.getJSONArray("Department");
-        JSONArray the_json_array = myjson.getJSONArray("Person");
-
-        for (int i = 0; i < the_json_array.length(); i++) {
-            //JSONObject obj = the_json_array.getJSONObject(i);
-            contactsList.add( convertPersonJSONtoModel(the_json_array.getJSONObject(i)) );
-            adapter.notifyDataSetChanged(); // update cards
-        }
-        for(int i = 0; i < dept_array.length(); i++){
-            //JSONObject obj = dept_array.getJSONObject(i);
-            departmentsList.add( convertDeptJSONtoModel(dept_array.getJSONObject(i)) );
-        }
-    }
-
-    // get attributes of event string into an event
-    public FacStaffModel convertPersonJSONtoModel(JSONObject s) throws org.json.JSONException{
-        FacStaffModel currentContact = new FacStaffModel();
-
-        currentContact.office = s.getString("office");
-        currentContact.Created = s.getString("Created");
-        currentContact.site = s.getString("site");
-        currentContact.Modified = s.getString("Modified");
-        currentContact.phone = s.getString("phone");
-        currentContact.id = s.getString("id");
-        currentContact.building = s.getString("building");
-        currentContact.firstName = s.getString("firstName");
-        currentContact.title = s.getString("title");
-        currentContact.lastName = s.getString("lastName");
-        currentContact.department = s.getString("department");
-        currentContact.email = s.getString("email");
-
-        return currentContact;
-    }
-
-    public DepartmentModel convertDeptJSONtoModel(JSONObject s) throws org.json.JSONException{
-        DepartmentModel currentContact = new DepartmentModel();
-
-        currentContact.ac = s.getString("ac");
-        currentContact.office = s.getString("office");
-        currentContact.Created = s.getString("Created");
-        currentContact.site = s.getString("site");
-        currentContact.Modified = s.getString("Modified");
-        currentContact.phone = s.getString("phone");
-        currentContact.chair = s.getString("chair");
-        currentContact.id = s.getString("id");
-        currentContact.building = s.getString("building");
-        currentContact.school = s.getString("school");
-        currentContact.displayName = s.getString("displayName");
-        currentContact.name = s.getString("name");
-        currentContact.Deleted = s.getString("Deleted");
-
-        return currentContact;
     }
 }

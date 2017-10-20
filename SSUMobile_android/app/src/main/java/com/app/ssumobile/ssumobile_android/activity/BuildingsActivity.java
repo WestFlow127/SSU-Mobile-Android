@@ -15,28 +15,14 @@ import android.widget.ListView;
 
 import com.app.ssumobile.ssumobile_android.R;
 import com.app.ssumobile.ssumobile_android.models.BuildingModel;
-import com.app.ssumobile.ssumobile_android.providers.JSONtoModelProvider;
+import com.app.ssumobile.ssumobile_android.providers.DataProvider;
 
-import org.json.JSONArray;
-import org.json.JSONObject;
-
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
-import java.net.URL;
 import java.util.ArrayList;
 
-import javax.net.ssl.HttpsURLConnection;
-
 public class BuildingsActivity extends AppCompatActivity {
-    String body;
-
+    DataProvider Dal;
     ArrayAdapter adapter;
-
     EditText inputSearch;
-
-    JSONtoModelProvider jsonConverter = new JSONtoModelProvider();
-    ArrayList<BuildingModel> contactsList = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,7 +31,12 @@ public class BuildingsActivity extends AppCompatActivity {
 
         inputSearch = (EditText) findViewById(R.id.input_search);
 
-        adapter = new ArrayAdapter<>(this, R.layout.activity_listview, contactsList);
+        Bundle data = getIntent().getExtras();
+        Dal.Bui = (ArrayList<BuildingModel>) data.getSerializable("dal.b");
+
+        if( Dal.Bui != null)
+            adapter = new ArrayAdapter<>(this, R.layout.activity_listview, Dal.Bui);
+
         ListView listView = (ListView) findViewById(R.id.mobile_list);
         listView.setAdapter(adapter);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -83,24 +74,6 @@ public class BuildingsActivity extends AppCompatActivity {
     @Override
     protected void onStart(){
         super.onStart();
-        Thread runner = new Thread(new Runnable(){
-            public void run()  {
-                try {
-                    //sendGet(url + Year + Month + Day); // get selected date's info
-                    sendGet("https://moonlight.cs.sonoma.edu/ssumobile/1_0/directory.py");
-                } catch (Throwable t) {
-                    System.out.println(t.getCause());
-                }
-            }
-        });
-        runner.start();
-        try {
-            runner.join();
-            adapter.notifyDataSetChanged(); // update cards
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        System.out.println("in onstart()");
     }
 
     @Override
@@ -122,6 +95,9 @@ public class BuildingsActivity extends AppCompatActivity {
                     @Override
                     public void run() {
                         Intent FSintent = new Intent(BuildingsActivity.this, FacultyStaffActivity.class);
+                        Bundle B = new Bundle();
+                        B.putSerializable("dal.f", Dal.Fac);
+                        FSintent.putExtras(B);
                         finish();
                         startActivity(FSintent);
                     }
@@ -133,6 +109,9 @@ public class BuildingsActivity extends AppCompatActivity {
                     @Override
                     public void run() {
                         Intent Dintent = new Intent(BuildingsActivity.this, DepartmentsActivity.class);
+                        Bundle B = new Bundle();
+                        B.putSerializable("dal.d", Dal.Dep);
+                        Dintent.putExtras(B);
                         finish();
                         startActivity(Dintent);
                     }
@@ -144,6 +123,9 @@ public class BuildingsActivity extends AppCompatActivity {
                     @Override
                     public void run() {
                         Intent Sintent = new Intent(BuildingsActivity.this, SchoolsActivity.class);
+                        Bundle B = new Bundle();
+                        B.putSerializable("dal.s", Dal.Sch);
+                        Sintent.putExtras(B);
                         finish();
                         startActivity(Sintent);
                     }
@@ -157,41 +139,5 @@ public class BuildingsActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
-    }
-
-    // HTTP GET request
-    private void sendGet(String url) throws Exception {
-
-        final String USER_AGENT = "Mozilla/5.0";
-
-        URL obj = new URL(url);
-        HttpsURLConnection con = (HttpsURLConnection) obj.openConnection();
-        con.setRequestMethod("GET");  // optional default is GET
-        con.setRequestProperty("User-Agent", USER_AGENT); //add request header
-        con.setHostnameVerifier(org.apache.http.conn.ssl.SSLSocketFactory.ALLOW_ALL_HOSTNAME_VERIFIER);
-
-
-        BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
-        String inputLine;
-        StringBuffer response = new StringBuffer();
-
-        while ((inputLine = in.readLine()) != null) {response.append(inputLine);}
-        in.close();
-
-        body = response.toString();
-        parseOutEvents();
-    }
-
-
-    // parse out events from body
-    private void parseOutEvents() throws org.json.JSONException {
-
-        JSONObject myjson = new JSONObject(body);
-        JSONArray the_json_array = myjson.getJSONArray("Building");
-        for (int i = 0; i < the_json_array.length(); i++) {
-            JSONObject obj = the_json_array.getJSONObject(i);
-            contactsList.add(jsonConverter.convertBuildJSONtoModel( obj ));
-            adapter.notifyDataSetChanged(); // update cards
-        }
     }
 }

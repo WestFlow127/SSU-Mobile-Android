@@ -1,13 +1,10 @@
 package com.app.ssumobile.ssumobile_android.models;
 
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-
 import java.io.Serializable;
 import java.util.ArrayList;
 
 /**
- * Created by WestFlow on 10/16/2015.
+ * Created by Weston on 10/16/2015.
  */
 // An application model used to drive the Directory Activity view
 public class DepartmentModel implements Serializable {

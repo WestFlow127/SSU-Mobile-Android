@@ -6,4 +6,4 @@
     <item android:color="@color/caldroid_darker_gray" caldroid:state_date_prev_next_month="true"/>
     <item android:color="@color/caldroid_black"/>
 
-</selector><!-- From: file:/Users/thomasdao/Documents/workspace/Caldroid/caldroid/src/main/res/color/cell_text_color.xml --><!-- From: file:/home/ben/school/370/Repositories/App/SSUMobile_android/app/build/intermediates/exploded-aar/com.roomorama/caldroid/2.2.1/res/color/cell_text_color.xml -->
+</selector><!-- From: file:/Users/thomasdao/Documents/workspace/Caldroid/caldroid/src/main/res/color/cell_text_color.xml -->

@@ -2,144 +2,463 @@
 <items version="2" >
 
     <item
-        jar="/home/ben/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.6.0/98476622f10715998eacf9240d6b479f12c66143/okio-1.6.0.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="98476622f10715998eacf9240d6b479f12c66143">
-        <dex dex="/home/ben/school/370/Repositories/App/SSUMobile_android/app/build/intermediates/pre-dexed/debug/okio-1.6.0-30f4c984861164396393d5fc727f05191a14a119.jar/classes.dex" />
-    </item>
-    <item
-        jar="/home/ben/.gradle/caches/modules-2/files-2.1/commons-lang/commons-lang/2.6/ce1edb914c94ebc388f086c6827e8bdeec71ac2/commons-lang-2.6.jar"
-        jumboMode="false"
-        revision="23.0.1"
+        is-multidex="true"
+        jar="C:\Users\WestFlow\.gradle\caches\modules-2\files-2.1\commons-lang\commons-lang\2.6\ce1edb914c94ebc388f086c6827e8bdeec71ac2\commons-lang-2.6.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
         sha1="0ce1edb914c94ebc388f086c6827e8bdeec71ac2">
-        <dex dex="/home/ben/school/370/Repositories/App/SSUMobile_android/app/build/intermediates/pre-dexed/debug/commons-lang-2.6-6b2f2fff187fa6c11f7bf96b1f6c10074693ed21.jar/classes.dex" />
+        <dex dex="C:\Users\WestFlow\Desktop\Repositories\SSUMobile Android\SSUMobile_android\SSUMobile_android\app\build\intermediates\transforms\dex\debug\folders\1000\10\commons-lang-2.6_fdad39b0babc1cd32bbcb18e318f3bf32d04ca57\classes.dex" />
     </item>
     <item
-        jar="/home/ben/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.3.1/ecb6e1f8e4b0e84c4b886c2f14a1500caf309757/gson-2.3.1.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
-        <dex dex="/home/ben/school/370/Repositories/App/SSUMobile_android/app/build/intermediates/pre-dexed/debug/gson-2.3.1-2a30fdb403495a64f0add3d4f92f23d8df95a0b0.jar/classes.dex" />
-    </item>
-    <item
-        jar="/home/ben/school/370/Repositories/App/SSUMobile_android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="ddde541c289c8b816a8f8fd6c325d80788c522a6">
-        <dex dex="/home/ben/school/370/Repositories/App/SSUMobile_android/app/build/intermediates/pre-dexed/debug/classes-a89f24178fb16c6c221f5a0ae354e0d5531e67a1.jar/classes.dex" />
-    </item>
-    <item
-        jar="/home/ben/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.8/af3be3f74d25fc5163b54f56a0d394b462dafafd/commons-codec-1.8.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="af3be3f74d25fc5163b54f56a0d394b462dafafd">
-        <dex dex="/home/ben/school/370/Repositories/App/SSUMobile_android/app/build/intermediates/pre-dexed/debug/commons-codec-1.8-ef69a1b8743e98ae46030e7112a0ef5c357138af.jar/classes.dex" />
-    </item>
-    <item
-        jar="/home/ben/.gradle/caches/modules-2/files-2.1/org.parceler/parceler-api/0.2.13/3bdd7267446c60215c6165a8129cc572ad407660/parceler-api-0.2.13.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="3bdd7267446c60215c6165a8129cc572ad407660">
-        <dex dex="/home/ben/school/370/Repositories/App/SSUMobile_android/app/build/intermediates/pre-dexed/debug/parceler-api-0.2.13-cef1071ec0faf072cf8e9db86baed69c7fcded83.jar/classes.dex" />
-    </item>
-    <item
-        jar="/home/ben/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit/retrofit/1.9.0/a681c044244d9fc375198588297a39ba78028423/retrofit-1.9.0.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="a681c044244d9fc375198588297a39ba78028423">
-        <dex dex="/home/ben/school/370/Repositories/App/SSUMobile_android/app/build/intermediates/pre-dexed/debug/retrofit-1.9.0-1ad06b6bbcc22f4551cfd86356bb618fb5dbe273.jar/classes.dex" />
-    </item>
-    <item
-        jar="/home/ben/.gradle/caches/modules-2/files-2.1/io.reactivex/rxjava/1.0.4/a607b0e12d2de769dc219e00b60a9b3d9e730d/rxjava-1.0.4.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="00a607b0e12d2de769dc219e00b60a9b3d9e730d">
-        <dex dex="/home/ben/school/370/Repositories/App/SSUMobile_android/app/build/intermediates/pre-dexed/debug/rxjava-1.0.4-b2b8c0a0885570d033bc1867707d687627c850ff.jar/classes.dex" />
-    </item>
-    <item
-        jar="/home/ben/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/23.1.0/support-annotations-23.1.0.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="92e3fc113ec3ee36b64603a38857b95700025633">
-        <dex dex="/home/ben/school/370/Repositories/App/SSUMobile_android/app/build/intermediates/pre-dexed/debug/support-annotations-23.1.0-38c4dbbca6b86b60caa8273721f580c1971e2a4e.jar/classes.dex" />
-    </item>
-    <item
-        jar="/home/ben/school/370/Repositories/App/SSUMobile_android/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/21.0.3/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="4b8945fc23a7461c6fdde15753456d64b0a9358b">
-        <dex dex="/home/ben/school/370/Repositories/App/SSUMobile_android/app/build/intermediates/pre-dexed/debug/classes-d920e8d46e8c09be0701c7e29354984a7773ca1f.jar/classes.dex" />
-    </item>
-    <item
-        jar="/home/ben/.gradle/caches/modules-2/files-2.1/com.darwinsys/hirondelle-date4j/1.5.1/7b52de513f87ae4d9ff5d17518def0a1e9bc3df0/hirondelle-date4j-1.5.1.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="7b52de513f87ae4d9ff5d17518def0a1e9bc3df0">
-        <dex dex="/home/ben/school/370/Repositories/App/SSUMobile_android/app/build/intermediates/pre-dexed/debug/hirondelle-date4j-1.5.1-223aff8a2400ce364a0f960d0f543ce6e3d6548a.jar/classes.dex" />
-    </item>
-    <item
-        jar="/home/ben/.gradle/caches/modules-2/files-2.1/io.reactivex/rxandroid/0.24.0/42dab493b8f74b164e082f281480c9d493ff89da/rxandroid-0.24.0.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="42dab493b8f74b164e082f281480c9d493ff89da">
-        <dex dex="/home/ben/school/370/Repositories/App/SSUMobile_android/app/build/intermediates/pre-dexed/debug/rxandroid-0.24.0-107ab26c165032db534d581b54ef67a009ec3ff8.jar/classes.dex" />
-    </item>
-    <item
-        jar="/home/ben/school/370/Repositories/App/SSUMobile_android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.0/jars/libs/internal_impl-23.1.0.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="8716243bf04bae8d6c9ca94d27b9a9be7236f0a3">
-        <dex dex="/home/ben/school/370/Repositories/App/SSUMobile_android/app/build/intermediates/pre-dexed/debug/internal_impl-23.1.0-a4c8a1fd7f3edfa289715f8dbc9bdd2a56005f8f.jar/classes.dex" />
-    </item>
-    <item
-        jar="/home/ben/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp/okhttp/2.5.0/4de2b4ed3445c37ec1720a7d214712e845a24636/okhttp-2.5.0.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="4de2b4ed3445c37ec1720a7d214712e845a24636">
-        <dex dex="/home/ben/school/370/Repositories/App/SSUMobile_android/app/build/intermediates/pre-dexed/debug/okhttp-2.5.0-4b79731a9b09e129458b7bf3b29af3804d18e230.jar/classes.dex" />
-    </item>
-    <item
-        jar="/home/ben/.gradle/caches/modules-2/files-2.1/org.mnode.ical4j/ical4j/1.0.5/8becf5df098856732212652d3a63de0c1b0b75db/ical4j-1.0.5.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="8becf5df098856732212652d3a63de0c1b0b75db">
-        <dex dex="/home/ben/school/370/Repositories/App/SSUMobile_android/app/build/intermediates/pre-dexed/debug/ical4j-1.0.5-5aec154a7b668b825a115379d241a02059e7b77e.jar/classes.dex" />
-    </item>
-    <item
-        jar="/home/ben/.gradle/caches/modules-2/files-2.1/backport-util-concurrent/backport-util-concurrent/2.1/f1beb9cecc07b3abea236d6f88c99653360787cd/backport-util-concurrent-2.1.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="f1beb9cecc07b3abea236d6f88c99653360787cd">
-        <dex dex="/home/ben/school/370/Repositories/App/SSUMobile_android/app/build/intermediates/pre-dexed/debug/backport-util-concurrent-2.1-260348ad6ec40ae05011a5af21fd717b90fca969.jar/classes.dex" />
-    </item>
-    <item
-        jar="/home/ben/school/370/Repositories/App/SSUMobile_android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="57ae0d750ff83f0c738d21720224ac7ea866a094">
-        <dex dex="/home/ben/school/370/Repositories/App/SSUMobile_android/app/build/intermediates/pre-dexed/debug/classes-03d2fb069fbae5347b69b849c296973216dfedb9.jar/classes.dex" />
-    </item>
-    <item
-        jar="/home/ben/school/370/Repositories/App/SSUMobile_android/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/21.0.3/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="00b0b7233e1ec64acebfac40d4983d32d4712426">
-        <dex dex="/home/ben/school/370/Repositories/App/SSUMobile_android/app/build/intermediates/pre-dexed/debug/classes-ae858db18ef2afbf0d6905082765ef6800320e28.jar/classes.dex" />
-    </item>
-    <item
-        jar="/home/ben/.gradle/caches/modules-2/files-2.1/org.parceler/parceler/0.2.13/ea3579621a7fe7083e7f7bb8be0d90c8751acbf9/parceler-0.2.13.jar"
-        jumboMode="false"
-        revision="23.0.1"
+        is-multidex="true"
+        jar="C:\Users\WestFlow\.gradle\caches\modules-2\files-2.1\org.parceler\parceler\0.2.13\ea3579621a7fe7083e7f7bb8be0d90c8751acbf9\parceler-0.2.13.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
         sha1="ea3579621a7fe7083e7f7bb8be0d90c8751acbf9">
-        <dex dex="/home/ben/school/370/Repositories/App/SSUMobile_android/app/build/intermediates/pre-dexed/debug/parceler-0.2.13-4f1f0f74eb787a80f0391112f6afa0b762137f4d.jar/classes.dex" />
+        <dex dex="C:\Users\WestFlow\Desktop\Repositories\SSUMobile Android\SSUMobile_android\SSUMobile_android\app\build\intermediates\transforms\dex\debug\folders\1000\10\parceler-0.2.13_1c8ee673fcbea1a19765b5946c8f8ac1deecd406\classes.dex" />
     </item>
     <item
-        jar="/home/ben/school/370/Repositories/App/SSUMobile_android/app/build/intermediates/exploded-aar/com.roomorama/caldroid/2.2.1/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
+        is-multidex="true"
+        jar="C:\Users\WestFlow\.android\build-cache\6408021001f361d72fb2d20240d882964d2c4eae\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="C:\Users\WestFlow\Desktop\Repositories\SSUMobile Android\SSUMobile_android\SSUMobile_android\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_2d8569a53f478a1b1fab659daec5fbd8d942f735\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\WestFlow\.gradle\caches\modules-2\files-2.1\backport-util-concurrent\backport-util-concurrent\2.1\f1beb9cecc07b3abea236d6f88c99653360787cd\backport-util-concurrent-2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f1beb9cecc07b3abea236d6f88c99653360787cd">
+        <dex dex="C:\Users\WestFlow\Desktop\Repositories\SSUMobile Android\SSUMobile_android\SSUMobile_android\app\build\intermediates\transforms\dex\debug\folders\1000\10\backport-util-concurrent-2.1_df3796b361428836a2b242ebf252b67a55bb03ea\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\WestFlow\.gradle\caches\modules-2\files-2.1\com.koushikdutta.ion\ion\2.1.6\cd55ef3ba6d8b62838b658ba2507b019dffb3a08\ion-2.1.6.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="cd55ef3ba6d8b62838b658ba2507b019dffb3a08">
+        <dex dex="C:\Users\WestFlow\Desktop\Repositories\SSUMobile Android\SSUMobile_android\SSUMobile_android\app\build\intermediates\transforms\dex\debug\folders\1000\10\ion-2.1.6_f17a81b766b382e43f6fe34f86b0679da9de2ba5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\WestFlow\.android\build-cache\e51a0ae299d44c339927a563e0d8e563626be3f9\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="C:\Users\WestFlow\Desktop\Repositories\SSUMobile Android\SSUMobile_android\SSUMobile_android\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_f7212ca95b1efb9eaf2d0252db22050418dbdcc8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\WestFlow\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.6.0\98476622f10715998eacf9240d6b479f12c66143\okio-1.6.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="98476622f10715998eacf9240d6b479f12c66143">
+        <dex dex="C:\Users\WestFlow\Desktop\Repositories\SSUMobile Android\SSUMobile_android\SSUMobile_android\app\build\intermediates\transforms\dex\debug\folders\1000\10\okio-1.6.0_923a76d0aff713dea386e165fab07732dbe1005c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\WestFlow\.android\build-cache\69f5faad9e15710198f199447459f5d0d1dc1881\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="C:\Users\WestFlow\Desktop\Repositories\SSUMobile Android\SSUMobile_android\SSUMobile_android\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_f3697fedad9a49ae2d72c8755be6d393bcafd9ac\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\WestFlow\Desktop\Repositories\SSUMobile Android\SSUMobile_android\SSUMobile_android\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="2b0e0453920dd7e9b0028e68f49dabd397b8e402">
+        <dex dex="C:\Users\WestFlow\Desktop\Repositories\SSUMobile Android\SSUMobile_android\SSUMobile_android\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_f1744d8487dde48da1a7293709b2a005ee20cbfd\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\WestFlow\.gradle\caches\modules-2\files-2.1\com.darwinsys\hirondelle-date4j\1.5.1\7b52de513f87ae4d9ff5d17518def0a1e9bc3df0\hirondelle-date4j-1.5.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="7b52de513f87ae4d9ff5d17518def0a1e9bc3df0">
+        <dex dex="C:\Users\WestFlow\Desktop\Repositories\SSUMobile Android\SSUMobile_android\SSUMobile_android\app\build\intermediates\transforms\dex\debug\folders\1000\10\hirondelle-date4j-1.5.1_3ef9a37e11568088c4dadf5074cd2efae79b020d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\WestFlow\.gradle\caches\modules-2\files-2.1\io.reactivex\rxjava\1.0.4\a607b0e12d2de769dc219e00b60a9b3d9e730d\rxjava-1.0.4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="00a607b0e12d2de769dc219e00b60a9b3d9e730d">
+        <dex dex="C:\Users\WestFlow\Desktop\Repositories\SSUMobile Android\SSUMobile_android\SSUMobile_android\app\build\intermediates\transforms\dex\debug\folders\1000\10\rxjava-1.0.4_e937ae2faedaee8a0120bc415445e05639f68f3f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\WestFlow\.android\build-cache\0fb18741f3148dc04cd11c6f6097a892c3d32289\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
         sha1="5326261b0e9b167c7b2cc8957de3270488670272">
-        <dex dex="/home/ben/school/370/Repositories/App/SSUMobile_android/app/build/intermediates/pre-dexed/debug/classes-7b7f75694f2199ab5dddf9eb31eb5479ba2a364a.jar/classes.dex" />
+        <dex dex="C:\Users\WestFlow\Desktop\Repositories\SSUMobile Android\SSUMobile_android\SSUMobile_android\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_b6120bcf1f8a35b1778d600f0f6a575fb09dcc39\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\WestFlow\.gradle\caches\modules-2\files-2.1\net.minidev\json-smart\1.0.9\740cece59da8261afe49585a0ea207981ac5aeb\json-smart-1.0.9.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="0740cece59da8261afe49585a0ea207981ac5aeb">
+        <dex dex="C:\Users\WestFlow\Desktop\Repositories\SSUMobile Android\SSUMobile_android\SSUMobile_android\app\build\intermediates\transforms\dex\debug\folders\1000\10\json-smart-1.0.9_3e2a4420f1ce180e3d6322ced3c60452ee9ed186\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\WestFlow\.gradle\caches\modules-2\files-2.1\commons-codec\commons-codec\1.8\af3be3f74d25fc5163b54f56a0d394b462dafafd\commons-codec-1.8.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="af3be3f74d25fc5163b54f56a0d394b462dafafd">
+        <dex dex="C:\Users\WestFlow\Desktop\Repositories\SSUMobile Android\SSUMobile_android\SSUMobile_android\app\build\intermediates\transforms\dex\debug\folders\1000\10\commons-codec-1.8_42d06e3d249d178f5c2bae669c0b719baf7f6299\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\WestFlow\.gradle\caches\modules-2\files-2.1\commons-lang\commons-lang\2.6\ce1edb914c94ebc388f086c6827e8bdeec71ac2\commons-lang-2.6.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0ce1edb914c94ebc388f086c6827e8bdeec71ac2">
+        <dex dex="C:\Users\WestFlow\Desktop\Repositories\SSUMobile Android\SSUMobile_android\SSUMobile_android\app\build\intermediates\transforms\dex\debug\folders\1000\10\commons-lang-2.6_fdad39b0babc1cd32bbcb18e318f3bf32d04ca57\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\WestFlow\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.6.0\98476622f10715998eacf9240d6b479f12c66143\okio-1.6.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="98476622f10715998eacf9240d6b479f12c66143">
+        <dex dex="C:\Users\WestFlow\Desktop\Repositories\SSUMobile Android\SSUMobile_android\SSUMobile_android\app\build\intermediates\transforms\dex\debug\folders\1000\10\okio-1.6.0_923a76d0aff713dea386e165fab07732dbe1005c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\WestFlow\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit\retrofit\1.9.0\a681c044244d9fc375198588297a39ba78028423\retrofit-1.9.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="a681c044244d9fc375198588297a39ba78028423">
+        <dex dex="C:\Users\WestFlow\Desktop\Repositories\SSUMobile Android\SSUMobile_android\SSUMobile_android\app\build\intermediates\transforms\dex\debug\folders\1000\10\retrofit-1.9.0_d79322872b186967c89375269836daeabec59a32\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\WestFlow\.gradle\caches\modules-2\files-2.1\commons-codec\commons-codec\1.8\af3be3f74d25fc5163b54f56a0d394b462dafafd\commons-codec-1.8.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="af3be3f74d25fc5163b54f56a0d394b462dafafd">
+        <dex dex="C:\Users\WestFlow\Desktop\Repositories\SSUMobile Android\SSUMobile_android\SSUMobile_android\app\build\intermediates\transforms\dex\debug\folders\1000\10\commons-codec-1.8_42d06e3d249d178f5c2bae669c0b719baf7f6299\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\WestFlow\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.7\751f548c85fa49f330cecbb1875893f971b33c4e\gson-2.7.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="751f548c85fa49f330cecbb1875893f971b33c4e">
+        <dex dex="C:\Users\WestFlow\Desktop\Repositories\SSUMobile Android\SSUMobile_android\SSUMobile_android\app\build\intermediates\transforms\dex\debug\folders\1000\10\gson-2.7_3ed50b8cae1797a4bfaee134bd394165d1469d68\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\WestFlow\.android\build-cache\5cd4fcb445097f1a3f3b65c8a34178282dcd6ba2\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="95519720620b553f63afc789beba9ad582807f7c">
+        <dex dex="C:\Users\WestFlow\Desktop\Repositories\SSUMobile Android\SSUMobile_android\SSUMobile_android\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_ee82c3383db18c3154d530d3d72e556d6d068db7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\WestFlow\.gradle\caches\modules-2\files-2.1\org.parceler\parceler\0.2.13\ea3579621a7fe7083e7f7bb8be0d90c8751acbf9\parceler-0.2.13.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="ea3579621a7fe7083e7f7bb8be0d90c8751acbf9">
+        <dex dex="C:\Users\WestFlow\Desktop\Repositories\SSUMobile Android\SSUMobile_android\SSUMobile_android\app\build\intermediates\transforms\dex\debug\folders\1000\10\parceler-0.2.13_1c8ee673fcbea1a19765b5946c8f8ac1deecd406\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\WestFlow\.android\build-cache\f5f9c6fbdc32a0359c79a1839666b73ea25e62ba\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="C:\Users\WestFlow\Desktop\Repositories\SSUMobile Android\SSUMobile_android\SSUMobile_android\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_0a63bf66d48ca2c0b3a2b25169df5295e62c2c10\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\WestFlow\.gradle\caches\modules-2\files-2.1\com.koushikdutta.async\androidasync\2.1.6\e3d5f6ab2003e31f2cf5ea61b4731a21e9517935\androidasync-2.1.6.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="e3d5f6ab2003e31f2cf5ea61b4731a21e9517935">
+        <dex dex="C:\Users\WestFlow\Desktop\Repositories\SSUMobile Android\SSUMobile_android\SSUMobile_android\app\build\intermediates\transforms\dex\debug\folders\1000\10\androidasync-2.1.6_02212d1d00c85097b0ddbe3a7d36d5226714c6fe\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\WestFlow\.gradle\caches\modules-2\files-2.1\com.koushikdutta.ion\ion\2.1.6\cd55ef3ba6d8b62838b658ba2507b019dffb3a08\ion-2.1.6.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="cd55ef3ba6d8b62838b658ba2507b019dffb3a08">
+        <dex dex="C:\Users\WestFlow\Desktop\Repositories\SSUMobile Android\SSUMobile_android\SSUMobile_android\app\build\intermediates\transforms\dex\debug\folders\1000\10\ion-2.1.6_f17a81b766b382e43f6fe34f86b0679da9de2ba5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\WestFlow\.gradle\caches\modules-2\files-2.1\org.mnode.ical4j\ical4j\1.0.5\8becf5df098856732212652d3a63de0c1b0b75db\ical4j-1.0.5.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="8becf5df098856732212652d3a63de0c1b0b75db">
+        <dex dex="C:\Users\WestFlow\Desktop\Repositories\SSUMobile Android\SSUMobile_android\SSUMobile_android\app\build\intermediates\transforms\dex\debug\folders\1000\10\ical4j-1.0.5_efe694b44670f380ee459bf456252d7ac3687387\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\WestFlow\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp\okhttp\2.5.0\4de2b4ed3445c37ec1720a7d214712e845a24636\okhttp-2.5.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4de2b4ed3445c37ec1720a7d214712e845a24636">
+        <dex dex="C:\Users\WestFlow\Desktop\Repositories\SSUMobile Android\SSUMobile_android\SSUMobile_android\app\build\intermediates\transforms\dex\debug\folders\1000\10\okhttp-2.5.0_eeac6ec31211fa409a451701a33affeb7c02f814\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\WestFlow\.android\build-cache\0fb18741f3148dc04cd11c6f6097a892c3d32289\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="5326261b0e9b167c7b2cc8957de3270488670272">
+        <dex dex="C:\Users\WestFlow\Desktop\Repositories\SSUMobile Android\SSUMobile_android\SSUMobile_android\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_b6120bcf1f8a35b1778d600f0f6a575fb09dcc39\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\WestFlow\.android\build-cache\c4fc736d72c64a2a00341d41daf97d8d2ada8a61\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="C:\Users\WestFlow\Desktop\Repositories\SSUMobile Android\SSUMobile_android\SSUMobile_android\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_5cc31a65da2b473dcdd8cc0f91ca8b7d1af5e065\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\WestFlow\.gradle\caches\modules-2\files-2.1\com.darwinsys\hirondelle-date4j\1.5.1\7b52de513f87ae4d9ff5d17518def0a1e9bc3df0\hirondelle-date4j-1.5.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7b52de513f87ae4d9ff5d17518def0a1e9bc3df0">
+        <dex dex="C:\Users\WestFlow\Desktop\Repositories\SSUMobile Android\SSUMobile_android\SSUMobile_android\app\build\intermediates\transforms\dex\debug\folders\1000\10\hirondelle-date4j-1.5.1_3ef9a37e11568088c4dadf5074cd2efae79b020d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\WestFlow\.android\build-cache\32b5738a9e7c026b25176b1fa827933a3d43085a\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="C:\Users\WestFlow\Desktop\Repositories\SSUMobile Android\SSUMobile_android\SSUMobile_android\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_24c2dadd47744e0aa03ba27e22ef95787cef11a3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\WestFlow\.gradle\caches\modules-2\files-2.1\org.apache.httpcomponents\httpclient-android\4.3.5.1\eecbb0b998e77629862a13d957d552b3be58fc4e\httpclient-android-4.3.5.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="eecbb0b998e77629862a13d957d552b3be58fc4e">
+        <dex dex="C:\Users\WestFlow\Desktop\Repositories\SSUMobile Android\SSUMobile_android\SSUMobile_android\app\build\intermediates\transforms\dex\debug\folders\1000\10\httpclient-android-4.3.5.1_1093d2d7dcf6a04493bda8efe1eaaf04e9071f2f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\WestFlow\Desktop\Repositories\SSUMobile Android\SSUMobile_android\SSUMobile_android\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="97b2430f9f87b86ed727440d8da54750f5cadf1e">
+        <dex dex="C:\Users\WestFlow\Desktop\Repositories\SSUMobile Android\SSUMobile_android\SSUMobile_android\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_f1744d8487dde48da1a7293709b2a005ee20cbfd\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\WestFlow\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit\retrofit\1.9.0\a681c044244d9fc375198588297a39ba78028423\retrofit-1.9.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a681c044244d9fc375198588297a39ba78028423">
+        <dex dex="C:\Users\WestFlow\Desktop\Repositories\SSUMobile Android\SSUMobile_android\SSUMobile_android\app\build\intermediates\transforms\dex\debug\folders\1000\10\retrofit-1.9.0_d79322872b186967c89375269836daeabec59a32\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\WestFlow\.android\build-cache\3a90d3c533cd4b41599f921851afa59e4bfdc192\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="C:\Users\WestFlow\Desktop\Repositories\SSUMobile Android\SSUMobile_android\SSUMobile_android\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_eaf3296448b62af8fd95b9510433fd5906e3e0ba\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\WestFlow\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp\okhttp\2.5.0\4de2b4ed3445c37ec1720a7d214712e845a24636\okhttp-2.5.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="4de2b4ed3445c37ec1720a7d214712e845a24636">
+        <dex dex="C:\Users\WestFlow\Desktop\Repositories\SSUMobile Android\SSUMobile_android\SSUMobile_android\app\build\intermediates\transforms\dex\debug\folders\1000\10\okhttp-2.5.0_eeac6ec31211fa409a451701a33affeb7c02f814\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\WestFlow\Desktop\Repositories\SSUMobile Android\SSUMobile_android\SSUMobile_android\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="C:\Users\WestFlow\Desktop\Repositories\SSUMobile Android\SSUMobile_android\SSUMobile_android\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_3f71051900d83923e7e6045479990227e127f873\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\WestFlow\.gradle\caches\modules-2\files-2.1\backport-util-concurrent\backport-util-concurrent\2.1\f1beb9cecc07b3abea236d6f88c99653360787cd\backport-util-concurrent-2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="f1beb9cecc07b3abea236d6f88c99653360787cd">
+        <dex dex="C:\Users\WestFlow\Desktop\Repositories\SSUMobile Android\SSUMobile_android\SSUMobile_android\app\build\intermediates\transforms\dex\debug\folders\1000\10\backport-util-concurrent-2.1_df3796b361428836a2b242ebf252b67a55bb03ea\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\WestFlow\.android\build-cache\ebcd9c9780502e96ea7ecbeb1fb1ebb336ca22e4\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="914f5d3e3ace66080e59613708f06d129a222e25">
+        <dex dex="C:\Users\WestFlow\Desktop\Repositories\SSUMobile Android\SSUMobile_android\SSUMobile_android\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_865b4b227409ae956c735a565546e35af1004db3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\WestFlow\.gradle\caches\modules-2\files-2.1\org.parceler\parceler-api\0.2.13\3bdd7267446c60215c6165a8129cc572ad407660\parceler-api-0.2.13.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3bdd7267446c60215c6165a8129cc572ad407660">
+        <dex dex="C:\Users\WestFlow\Desktop\Repositories\SSUMobile Android\SSUMobile_android\SSUMobile_android\app\build\intermediates\transforms\dex\debug\folders\1000\10\parceler-api-0.2.13_a25c58bf64d1711f86002417b1fe5c185c598bc5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\WestFlow\.gradle\caches\modules-2\files-2.1\io.reactivex\rxandroid\0.24.0\42dab493b8f74b164e082f281480c9d493ff89da\rxandroid-0.24.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="42dab493b8f74b164e082f281480c9d493ff89da">
+        <dex dex="C:\Users\WestFlow\Desktop\Repositories\SSUMobile Android\SSUMobile_android\SSUMobile_android\app\build\intermediates\transforms\dex\debug\folders\1000\10\rxandroid-0.24.0_10d660f1e77877d974e6d5839ba6433b6a74849c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\WestFlow\.gradle\caches\modules-2\files-2.1\org.mnode.ical4j\ical4j\1.0.5\8becf5df098856732212652d3a63de0c1b0b75db\ical4j-1.0.5.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8becf5df098856732212652d3a63de0c1b0b75db">
+        <dex dex="C:\Users\WestFlow\Desktop\Repositories\SSUMobile Android\SSUMobile_android\SSUMobile_android\app\build\intermediates\transforms\dex\debug\folders\1000\10\ical4j-1.0.5_efe694b44670f380ee459bf456252d7ac3687387\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\WestFlow\.gradle\caches\modules-2\files-2.1\org.apache.httpcomponents\httpclient-android\4.3.5.1\eecbb0b998e77629862a13d957d552b3be58fc4e\httpclient-android-4.3.5.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="eecbb0b998e77629862a13d957d552b3be58fc4e">
+        <dex dex="C:\Users\WestFlow\Desktop\Repositories\SSUMobile Android\SSUMobile_android\SSUMobile_android\app\build\intermediates\transforms\dex\debug\folders\1000\10\httpclient-android-4.3.5.1_1093d2d7dcf6a04493bda8efe1eaaf04e9071f2f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\WestFlow\.gradle\caches\modules-2\files-2.1\io.reactivex\rxjava\1.0.4\a607b0e12d2de769dc219e00b60a9b3d9e730d\rxjava-1.0.4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="00a607b0e12d2de769dc219e00b60a9b3d9e730d">
+        <dex dex="C:\Users\WestFlow\Desktop\Repositories\SSUMobile Android\SSUMobile_android\SSUMobile_android\app\build\intermediates\transforms\dex\debug\folders\1000\10\rxjava-1.0.4_e937ae2faedaee8a0120bc415445e05639f68f3f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\WestFlow\Desktop\Repositories\SSUMobile Android\SSUMobile_android\SSUMobile_android\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="C:\Users\WestFlow\Desktop\Repositories\SSUMobile Android\SSUMobile_android\SSUMobile_android\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_3f71051900d83923e7e6045479990227e127f873\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\WestFlow\.gradle\caches\modules-2\files-2.1\net.minidev\json-smart\1.0.9\740cece59da8261afe49585a0ea207981ac5aeb\json-smart-1.0.9.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0740cece59da8261afe49585a0ea207981ac5aeb">
+        <dex dex="C:\Users\WestFlow\Desktop\Repositories\SSUMobile Android\SSUMobile_android\SSUMobile_android\app\build\intermediates\transforms\dex\debug\folders\1000\10\json-smart-1.0.9_3e2a4420f1ce180e3d6322ced3c60452ee9ed186\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\WestFlow\.android\build-cache\cc77a10a8f60747d1fd76729afa2b2e5964e3c1d\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\WestFlow\Desktop\Repositories\SSUMobile Android\SSUMobile_android\SSUMobile_android\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_19d71d5b90534befb0a20b5842e5d96684872f84\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\WestFlow\.android\build-cache\d475091ea0fbd9b581e0b5d367bd646a63a45d73\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="C:\Users\WestFlow\Desktop\Repositories\SSUMobile Android\SSUMobile_android\SSUMobile_android\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_81d622e2aaca065b7a5ab8a06d82a65ef564acc8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\WestFlow\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.3.1\support-annotations-25.3.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="C:\Users\WestFlow\Desktop\Repositories\SSUMobile Android\SSUMobile_android\SSUMobile_android\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.3.1_251a1b16d7b3e632cb768300d733e9696d71cd4f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\WestFlow\.gradle\caches\modules-2\files-2.1\org.parceler\parceler-api\0.2.13\3bdd7267446c60215c6165a8129cc572ad407660\parceler-api-0.2.13.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="3bdd7267446c60215c6165a8129cc572ad407660">
+        <dex dex="C:\Users\WestFlow\Desktop\Repositories\SSUMobile Android\SSUMobile_android\SSUMobile_android\app\build\intermediates\transforms\dex\debug\folders\1000\10\parceler-api-0.2.13_a25c58bf64d1711f86002417b1fe5c185c598bc5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\WestFlow\.gradle\caches\modules-2\files-2.1\com.koushikdutta.async\androidasync\2.1.6\e3d5f6ab2003e31f2cf5ea61b4731a21e9517935\androidasync-2.1.6.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e3d5f6ab2003e31f2cf5ea61b4731a21e9517935">
+        <dex dex="C:\Users\WestFlow\Desktop\Repositories\SSUMobile Android\SSUMobile_android\SSUMobile_android\app\build\intermediates\transforms\dex\debug\folders\1000\10\androidasync-2.1.6_02212d1d00c85097b0ddbe3a7d36d5226714c6fe\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\WestFlow\.gradle\caches\modules-2\files-2.1\io.reactivex\rxandroid\0.24.0\42dab493b8f74b164e082f281480c9d493ff89da\rxandroid-0.24.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="42dab493b8f74b164e082f281480c9d493ff89da">
+        <dex dex="C:\Users\WestFlow\Desktop\Repositories\SSUMobile Android\SSUMobile_android\SSUMobile_android\app\build\intermediates\transforms\dex\debug\folders\1000\10\rxandroid-0.24.0_10d660f1e77877d974e6d5839ba6433b6a74849c\classes.dex" />
     </item>
 
 </items>

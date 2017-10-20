@@ -19,13 +19,9 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.app.ssumobile.ssumobile_android.R;
-import com.app.ssumobile.ssumobile_android.models.BuildingModel;
 import com.app.ssumobile.ssumobile_android.models.DepartmentModel;
-import com.app.ssumobile.ssumobile_android.models.FacStaffModel;
-import com.app.ssumobile.ssumobile_android.models.SchoolModel;
 import com.app.ssumobile.ssumobile_android.providers.DataProvider;
 
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
@@ -33,11 +29,6 @@ import java.util.Comparator;
 public class DepartmentsActivity extends AppCompatActivity {
     ArrayAdapter adapter;
     DataProvider Dal = new DataProvider();
-
-    ArrayList<DepartmentModel> contactsList = new ArrayList<>();
-    ArrayList<FacStaffModel> facStaffList = new ArrayList<>();
-    ArrayList<BuildingModel> buildingList = new ArrayList<>();
-    ArrayList<SchoolModel> schoolList = new ArrayList<>();
 
     EditText inputSearch;
 
@@ -52,7 +43,8 @@ public class DepartmentsActivity extends AppCompatActivity {
         InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
         imm.toggleSoftInput(InputMethodManager.SHOW_FORCED, InputMethodManager.HIDE_IMPLICIT_ONLY);
 
-        adapter = new ArrayAdapter<>(this, R.layout.activity_listview, contactsList);
+        //if( Dal.Dep != null)
+            adapter = new ArrayAdapter<>(this, R.layout.activity_listview, Dal.Dep);
         ListView listView = (ListView) findViewById(R.id.mobile_list);
         listView.setAdapter(adapter);
         listView.setTextFilterEnabled(true);
@@ -116,6 +108,10 @@ public class DepartmentsActivity extends AppCompatActivity {
                     @Override
                     public void run() {
                         Intent FSintent = new Intent(DepartmentsActivity.this, FacultyStaffActivity.class);
+                        Bundle B = new Bundle();
+                        B.putSerializable("dal.f", Dal.Fac);
+                        B.putSerializable("dal.d", Dal.Dep);
+                        FSintent.putExtras(B);
                         finish();
                         startActivity(FSintent);
                     }
@@ -128,6 +124,9 @@ public class DepartmentsActivity extends AppCompatActivity {
                     @Override
                     public void run() {
                         Intent Bintent = new Intent(DepartmentsActivity.this, BuildingsActivity.class);
+                        Bundle B = new Bundle();
+                        B.putSerializable("dal.b", Dal.Bui);
+                        Bintent.putExtras(B);
                         finish();
                         startActivity(Bintent);
                     }
@@ -140,6 +139,9 @@ public class DepartmentsActivity extends AppCompatActivity {
                     @Override
                     public void run() {
                         Intent Sintent = new Intent(DepartmentsActivity.this, SchoolsActivity.class);
+                        Bundle B = new Bundle();
+                        B.putSerializable("dal.s", Dal.Sch);
+                        Sintent.putExtras(B);
                         finish();
                         startActivity(Sintent);
                     }
@@ -180,19 +182,14 @@ public class DepartmentsActivity extends AppCompatActivity {
 
         @Override
         protected void onPostExecute(final Boolean success) {
-            // after downloading and parsing
-            for (int i = 0; i < buildingList.size(); ++i) {
-                for (int j = 0; j < contactsList.size(); ++j) {
-                    if (buildingList.get(i).id.equals(contactsList.get(j).building))
-                        contactsList.get(j).buildingName = buildingList.get(i).name;
+            // add all faculty members to the departments list view 
+            for (int i = 0; i < Dal.Fac.size(); ++i) {
+                for (int k = 0; k < Dal.Dep.size(); ++k) {
+                    if (Dal.Dep.get(k).id.equals(Dal.Fac.get(i).department))
+                        Dal.Dep.get(k).getFacStaffList().add(Dal.Fac.get(i));
                 }
             }
-            for (int i = 0; i < facStaffList.size(); ++i) {
-                for (int k = 0; k < contactsList.size(); ++k) {
-                    if (contactsList.get(k).id.equals(facStaffList.get(i).department))
-                        contactsList.get(k).getFacStaffList().add(facStaffList.get(i));
-                }
-            }
+
             adapter.notifyDataSetChanged(); // update cards
 
             if (dialog.isShowing()) {
@@ -209,9 +206,9 @@ public class DepartmentsActivity extends AppCompatActivity {
         protected Boolean doInBackground(final String... args) {
             this.dialog.setMessage("Downloading data...");
 
-            Dal.getData(contactsList, facStaffList, buildingList, schoolList);
+            Dal.getData(true,true,true,true);
 
-            Collections.sort(contactsList, new Comparator<DepartmentModel>() {
+            Collections.sort(Dal.Dep, new Comparator<DepartmentModel>() {
                 @Override
                 public int compare(DepartmentModel lhs, DepartmentModel rhs) {
                     return lhs.displayName.compareTo(rhs.displayName);

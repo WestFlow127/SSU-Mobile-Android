@@ -10,4 +10,4 @@
     <item android:drawable="@color/caldroid_lighter_gray" android:state_pressed="true"/>
     <item android:drawable="@color/caldroid_black" android:state_pressed="false"/>
 
-</selector><!-- From: file:/Users/thomasdao/Documents/workspace/Caldroid/caldroid/src/main/res/drawable/cell_bg_dark.xml --><!-- From: file:/home/ben/school/370/Repositories/App/SSUMobile_android/app/build/intermediates/exploded-aar/com.roomorama/caldroid/2.2.1/res/drawable/cell_bg_dark.xml -->
+</selector><!-- From: file:/Users/thomasdao/Documents/workspace/Caldroid/caldroid/src/main/res/drawable/cell_bg_dark.xml -->

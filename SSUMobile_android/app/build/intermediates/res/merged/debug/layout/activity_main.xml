@@ -58,4 +58,4 @@
         android:textColor="@color/caldroid_white"
         android:layout_below="@+id/news_button"/>
 
-</LinearLayout><!-- From: file:/home/ben/school/370/Repositories/App/SSUMobile_android/app/src/main/res/layout/activity_main.xml -->
+</LinearLayout>
