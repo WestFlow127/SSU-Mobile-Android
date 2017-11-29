@@ -17,12 +17,10 @@ import com.app.ssumobile.ssumobile_android.R;
 import com.app.ssumobile.ssumobile_android.models.SchoolModel;
 import com.app.ssumobile.ssumobile_android.providers.DataProvider;
 
-import java.util.ArrayList;
-
 public class SchoolsActivity extends AppCompatActivity {
     ArrayAdapter adapter;
     EditText inputSearch;
-    DataProvider Dal;
+    static DataProvider Dal;
 
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
@@ -30,9 +28,6 @@ public class SchoolsActivity extends AppCompatActivity {
         setContentView(R.layout.directory_view);
 
         inputSearch = (EditText) findViewById(R.id.input_search);
-
-        Bundle data = getIntent().getExtras();
-        Dal.Sch = (ArrayList<SchoolModel>) data.getSerializable("dal.s");
 
         if( Dal.Sch != null)
             adapter = new ArrayAdapter<>(this, R.layout.activity_listview, Dal.Sch);
@@ -72,24 +67,6 @@ public class SchoolsActivity extends AppCompatActivity {
     @Override
     protected void onStart(){
         super.onStart();
-//        Thread runner = new Thread(new Runnable(){
-//            public void run()  {
-//                try {
-//                    //sendGet(url + Year + Month + Day); // get selected date's info
-//                    sendGet("https://moonlight.cs.sonoma.edu/ssumobile/1_0/directory.py");
-//                } catch (Throwable t) {
-//                    System.out.println(t.getCause());
-//                }
-//            }
-//        });
-//        runner.start();
-//        try {
-//            runner.join();
-//            adapter.notifyDataSetChanged(); // update cards
-//        } catch (InterruptedException e) {
-//            e.printStackTrace();
-//        }
-//        System.out.println("in onstart()");
     }
 
     @Override
@@ -110,10 +87,8 @@ public class SchoolsActivity extends AppCompatActivity {
                Thread Drunner = new Thread(new Runnable() {
                    @Override
                    public void run() {
+                       DepartmentsActivity.Dal = Dal;
                        Intent Dintent = new Intent(SchoolsActivity.this, DepartmentsActivity.class);
-                       Bundle B = new Bundle();
-                       B.putSerializable("dal.d", Dal.Dep);
-                       Dintent.putExtras(B);
                        finish();
                        startActivity(Dintent);
                    }
@@ -124,10 +99,8 @@ public class SchoolsActivity extends AppCompatActivity {
                 Thread runner = new Thread(new Runnable() {
                     @Override
                     public void run() {
+                        FacultyStaffActivity.Dal = Dal;
                         Intent FSintent = new Intent(SchoolsActivity.this, FacultyStaffActivity.class);
-                        Bundle B = new Bundle();
-                        B.putSerializable("dal.f", Dal.Fac);
-                        FSintent.putExtras(B);
                         finish();
                         startActivity(FSintent);
                     }
@@ -138,10 +111,8 @@ public class SchoolsActivity extends AppCompatActivity {
                 Thread Brunner = new Thread(new Runnable() {
                     @Override
                     public void run() {
+                        BuildingsActivity.Dal = Dal;
                         Intent Bintent = new Intent(SchoolsActivity.this, BuildingsActivity.class);
-                        Bundle B = new Bundle();
-                        B.putSerializable("dal.b", Dal.Bui);
-                        Bintent.putExtras(B);
                         finish();
                         startActivity(Bintent);
                     }

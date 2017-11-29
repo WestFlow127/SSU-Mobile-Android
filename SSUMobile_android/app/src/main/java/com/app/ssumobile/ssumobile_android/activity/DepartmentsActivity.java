@@ -28,7 +28,7 @@ import java.util.Comparator;
 
 public class DepartmentsActivity extends AppCompatActivity {
     ArrayAdapter adapter;
-    DataProvider Dal = new DataProvider();
+    static DataProvider Dal = new DataProvider();
 
     EditText inputSearch;
 
@@ -62,7 +62,8 @@ public class DepartmentsActivity extends AppCompatActivity {
         });
 
         // get data into listview in the background
-        new ProgressTask(DepartmentsActivity.this).execute();
+        if( Dal.Dep.isEmpty() )
+            new ProgressTask(DepartmentsActivity.this).execute();
         adapter.notifyDataSetChanged(); // update cards
     }
 
@@ -107,11 +108,8 @@ public class DepartmentsActivity extends AppCompatActivity {
                 Thread runner = new Thread(new Runnable() {
                     @Override
                     public void run() {
+                        FacultyStaffActivity.Dal = Dal;
                         Intent FSintent = new Intent(DepartmentsActivity.this, FacultyStaffActivity.class);
-                        Bundle B = new Bundle();
-                        B.putSerializable("dal.f", Dal.Fac);
-                        B.putSerializable("dal.d", Dal.Dep);
-                        FSintent.putExtras(B);
                         finish();
                         startActivity(FSintent);
                     }
@@ -123,10 +121,8 @@ public class DepartmentsActivity extends AppCompatActivity {
                 Thread Brunner = new Thread(new Runnable() {
                     @Override
                     public void run() {
+                        BuildingsActivity.Dal = Dal;
                         Intent Bintent = new Intent(DepartmentsActivity.this, BuildingsActivity.class);
-                        Bundle B = new Bundle();
-                        B.putSerializable("dal.b", Dal.Bui);
-                        Bintent.putExtras(B);
                         finish();
                         startActivity(Bintent);
                     }
@@ -138,10 +134,8 @@ public class DepartmentsActivity extends AppCompatActivity {
                 Thread Srunner = new Thread(new Runnable() {
                     @Override
                     public void run() {
+                        SchoolsActivity.Dal = Dal;
                         Intent Sintent = new Intent(DepartmentsActivity.this, SchoolsActivity.class);
-                        Bundle B = new Bundle();
-                        B.putSerializable("dal.s", Dal.Sch);
-                        Sintent.putExtras(B);
                         finish();
                         startActivity(Sintent);
                     }
@@ -206,7 +200,7 @@ public class DepartmentsActivity extends AppCompatActivity {
         protected Boolean doInBackground(final String... args) {
             this.dialog.setMessage("Downloading data...");
 
-            Dal.getData(true,true,true,true);
+            Dal.getData();
 
             Collections.sort(Dal.Dep, new Comparator<DepartmentModel>() {
                 @Override

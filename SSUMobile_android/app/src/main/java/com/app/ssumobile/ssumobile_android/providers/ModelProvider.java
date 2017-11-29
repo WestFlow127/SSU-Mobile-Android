@@ -69,9 +69,9 @@ public class ModelProvider implements Serializable {
     public SchoolModel convertJSONtoSchool(JSONObject s) throws org.json.JSONException{
         SchoolModel currentSchool = new SchoolModel();
 
-        currentSchool.building = s.getString("building");
-        currentSchool.dean = s.getString("dean");
-        currentSchool.admin = s.getString("admin");
+        currentSchool.building = s.getString("building_name");
+        currentSchool.dean_name = s.getString("dean_name");
+        currentSchool.admin_name = s.getString("admin_name");
         currentSchool.id = s.getString("id");
         currentSchool.name = s.getString("name");
         currentSchool.assistant= s.getString("assistant");

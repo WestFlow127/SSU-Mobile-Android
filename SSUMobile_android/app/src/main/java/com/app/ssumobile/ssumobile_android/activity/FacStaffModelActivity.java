@@ -33,8 +33,10 @@ public class FacStaffModelActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         // Set the facstaff_model_view to the current view
         setContentView(R.layout.facstaff_model_view);
+
         // Set instances of each Button/Text View
         name = (TextView) findViewById(R.id.name_button);
         Title = (TextView) findViewById(R.id.Title_button);
@@ -46,6 +48,7 @@ public class FacStaffModelActivity extends AppCompatActivity {
 
         Bundle data = getIntent().getExtras();
         ContactProvider( (FacStaffModel) data.getSerializable("FacStaffModel"));
+
         // Initiate Threads for onClickListeners
         PhoneButtonThread();
         EmailButtonThread();

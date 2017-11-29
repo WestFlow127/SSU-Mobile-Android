@@ -37,4 +37,6 @@
     <string name="title_activity_resources">resourcesActivity</string>
     <string name="title_activity_resource_to_url">resourceToURL</string>
     <string name="building_button">"Building"</string>
+    <string name="No_Admin">"No Admin Name Available"</string>
+    <string name="No_Dean">"No Dean Name Available"</string>
 </resources>

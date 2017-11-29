@@ -34,18 +34,14 @@ public class DataProvider implements Serializable {
     public ArrayList<BuildingModel> Bui = new ArrayList<>();
     public ArrayList<SchoolModel> Sch = new ArrayList<>();
 
-    public  void getData(final boolean D, final boolean F, final boolean B, final boolean S){
+    public  void getData(){
 
         Thread runner1 = new Thread(new Runnable() {
             @Override
             public void run() {
-                if (D)
                     Djson = sendGet("https://moonlight.cs.sonoma.edu/api/v1/directory/department/?format=json");
-                if (F)
                     Fjson = sendGet("https://moonlight.cs.sonoma.edu/api/v1/directory/person/?format=json");
-                if (B)
                     Bjson = sendGet("https://moonlight.cs.sonoma.edu/api/v1/directory/building/?format=json");
-                if (S)
                     Sjson = sendGet("https://moonlight.cs.sonoma.edu/api/v1/directory/school/?format=json");
             }
         });
@@ -56,7 +52,7 @@ public class DataProvider implements Serializable {
             e.printStackTrace();
         }
 
-        tryparseOutEvents(D, F, B, S);
+        tryparseOutEvents();
     }
 
     private String sendGet(String url){
@@ -87,38 +83,29 @@ public class DataProvider implements Serializable {
         return null;
     }
     // parse out events from body
-    private void parseOutEvents(boolean D, boolean F, boolean B, boolean S) throws org.json.JSONException {
+    private void parseOutEvents() throws org.json.JSONException {
         System.out.println("in parseOutEvents()");
-
-        if(D) {
-            JSONArray DepJSON = new JSONArray(Djson);
-            for (int i = 0; i < DepJSON.length(); i++) {
-                Dep.add(jsonConverter.convertDeptJSONtoModel(DepJSON.getJSONObject(i)));
-            }
+        JSONArray DepJSON = new JSONArray(Djson);
+        for (int i = 0; i < DepJSON.length(); i++) {
+            Dep.add(jsonConverter.convertDeptJSONtoModel(DepJSON.getJSONObject(i)));
         }
-        if (F) {
-            JSONArray FacJSON = new JSONArray(Fjson);
-            for (int i = 0; i < FacJSON.length(); i++) {
-                Fac.add(jsonConverter.convertPersonJSONtoModel(FacJSON.getJSONObject(i)));
-            }
+        JSONArray FacJSON = new JSONArray(Fjson);
+        for (int i = 0; i < FacJSON.length(); i++) {
+            Fac.add(jsonConverter.convertPersonJSONtoModel(FacJSON.getJSONObject(i)));
         }
-        if(B) {
-            JSONArray BuildingJSON = new JSONArray(Bjson);
-            for (int i = 0; i < BuildingJSON.length(); i++) {
-                Bui.add(jsonConverter.convertBuildJSONtoModel(BuildingJSON.getJSONObject(i)));
-            }
+        JSONArray BuildingJSON = new JSONArray(Bjson);
+        for (int i = 0; i < BuildingJSON.length(); i++) {
+            Bui.add(jsonConverter.convertBuildJSONtoModel(BuildingJSON.getJSONObject(i)));
         }
-        if(S) {
-            JSONArray SJSON = new JSONArray(Sjson);
-            for (int i = 0; i < SJSON.length(); i++) {
-                Sch.add(jsonConverter.convertJSONtoSchool(SJSON.getJSONObject(i)));
-            }
+        JSONArray SJSON = new JSONArray(Sjson);
+        for (int i = 0; i < SJSON.length(); i++) {
+            Sch.add(jsonConverter.convertJSONtoSchool(SJSON.getJSONObject(i)));
         }
     }
 
-    private void tryparseOutEvents(boolean D, boolean F, boolean B, boolean S){
+    private void tryparseOutEvents(){
         try {
-            parseOutEvents(D, F, B, S);
+            parseOutEvents();
         } catch (JSONException e) {
             e.printStackTrace();
         }

@@ -8,9 +8,9 @@ import java.io.Serializable;
 public class SchoolModel implements Serializable {
 
     public String building;
-    public String dean;
+    public String dean_name;
     public String name;
-    public String admin;
+    public String admin_name;
     public String assistant;
     public String id;
     @Override

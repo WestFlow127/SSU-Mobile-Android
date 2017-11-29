@@ -14,6 +14,9 @@ import com.app.ssumobile.ssumobile_android.models.SchoolModel;
 public class SchoolModelActivity extends AppCompatActivity {
 
     TextView SchoolName;
+    TextView AdminName;
+    TextView DeanName;
+    TextView BuildingName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,16 +25,28 @@ public class SchoolModelActivity extends AppCompatActivity {
         setContentView(R.layout.school_model_view);
         // Set instances of each Button/Text View
         SchoolName = (TextView) findViewById(R.id.School_Name_textview);
-
+        AdminName = (TextView) findViewById(R.id.admin_name);
+        DeanName = (TextView) findViewById(R.id.dean_name);
+        BuildingName = (TextView) findViewById(R.id.building_name);
 
         Bundle data = getIntent().getExtras();
         SchoolModel school;
         school = (SchoolModel) data.getSerializable("SchoolModel");
         if( !school.name.equals("null") )
             SchoolName.setText(school.name);
+        
+        if( !school.admin_name.equals("null") )
+            AdminName.setText(school.admin_name);
+        else
+            AdminName.setText(R.string.No_Admin);
 
-        // Initiate Threads for onClickListeners
+        if( !school.building.equals("null"))
+            BuildingName.setText(school.building);
 
+        if(!school.dean_name.equals("null"))
+            DeanName.setText(school.dean_name);
+        else
+            DeanName.setText(R.string.No_Dean);
     }
 
     @Override

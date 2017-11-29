@@ -264,6 +264,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\WestFlow\Desktop\Repositories\SSU-Mobile-Android\SSUMobile_android\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="C:\Users\WestFlow\Desktop\Repositories\SSU-Mobile-Android\SSUMobile_android\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_b942ce6d983fc005215cfbbc3c6d67905834b47a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\WestFlow\.android\build-cache\32b5738a9e7c026b25176b1fa827933a3d43085a\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
@@ -378,6 +387,15 @@
         revision="25.0.1"
         sha1="eecbb0b998e77629862a13d957d552b3be58fc4e">
         <dex dex="C:\Users\WestFlow\Desktop\Repositories\SSUMobile Android\SSUMobile_android\SSUMobile_android\app\build\intermediates\transforms\dex\debug\folders\1000\10\httpclient-android-4.3.5.1_1093d2d7dcf6a04493bda8efe1eaaf04e9071f2f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\WestFlow\Desktop\Repositories\SSU-Mobile-Android\SSUMobile_android\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="9b5e801d551cd4b743b792191c7cc93cb6f51c86">
+        <dex dex="C:\Users\WestFlow\Desktop\Repositories\SSU-Mobile-Android\SSUMobile_android\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_4407bdb49d88adabbad6214707315ad47dcf0440\classes.dex" />
     </item>
     <item
         is-multidex="true"

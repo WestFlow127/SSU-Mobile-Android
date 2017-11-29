@@ -17,10 +17,8 @@ import com.app.ssumobile.ssumobile_android.R;
 import com.app.ssumobile.ssumobile_android.models.BuildingModel;
 import com.app.ssumobile.ssumobile_android.providers.DataProvider;
 
-import java.util.ArrayList;
-
 public class BuildingsActivity extends AppCompatActivity {
-    DataProvider Dal;
+    static DataProvider Dal;
     ArrayAdapter adapter;
     EditText inputSearch;
 
@@ -30,9 +28,6 @@ public class BuildingsActivity extends AppCompatActivity {
         setContentView(R.layout.directory_view);
 
         inputSearch = (EditText) findViewById(R.id.input_search);
-
-        Bundle data = getIntent().getExtras();
-        Dal.Bui = (ArrayList<BuildingModel>) data.getSerializable("dal.b");
 
         if( Dal.Bui != null)
             adapter = new ArrayAdapter<>(this, R.layout.activity_listview, Dal.Bui);
@@ -52,6 +47,7 @@ public class BuildingsActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
         // Enable Search Filter for search logic
         inputSearch.addTextChangedListener(new TextWatcher() {
             @Override
@@ -94,10 +90,8 @@ public class BuildingsActivity extends AppCompatActivity {
                 Thread FSrunner = new Thread(new Runnable() {
                     @Override
                     public void run() {
+                        FacultyStaffActivity.Dal = Dal;
                         Intent FSintent = new Intent(BuildingsActivity.this, FacultyStaffActivity.class);
-                        Bundle B = new Bundle();
-                        B.putSerializable("dal.f", Dal.Fac);
-                        FSintent.putExtras(B);
                         finish();
                         startActivity(FSintent);
                     }
@@ -108,10 +102,8 @@ public class BuildingsActivity extends AppCompatActivity {
                 Thread Drunner = new Thread(new Runnable() {
                     @Override
                     public void run() {
+                        DepartmentsActivity.Dal = Dal;
                         Intent Dintent = new Intent(BuildingsActivity.this, DepartmentsActivity.class);
-                        Bundle B = new Bundle();
-                        B.putSerializable("dal.d", Dal.Dep);
-                        Dintent.putExtras(B);
                         finish();
                         startActivity(Dintent);
                     }
@@ -122,10 +114,8 @@ public class BuildingsActivity extends AppCompatActivity {
                 Thread Srunner = new Thread(new Runnable() {
                     @Override
                     public void run() {
+                        SchoolsActivity.Dal = Dal;
                         Intent Sintent = new Intent(BuildingsActivity.this, SchoolsActivity.class);
-                        Bundle B = new Bundle();
-                        B.putSerializable("dal.s", Dal.Sch);
-                        Sintent.putExtras(B);
                         finish();
                         startActivity(Sintent);
                     }
