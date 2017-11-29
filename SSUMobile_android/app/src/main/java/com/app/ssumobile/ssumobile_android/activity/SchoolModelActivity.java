@@ -34,7 +34,7 @@ public class SchoolModelActivity extends AppCompatActivity {
         school = (SchoolModel) data.getSerializable("SchoolModel");
         if( !school.name.equals("null") )
             SchoolName.setText(school.name);
-        
+
         if( !school.admin_name.equals("null") )
             AdminName.setText(school.admin_name);
         else

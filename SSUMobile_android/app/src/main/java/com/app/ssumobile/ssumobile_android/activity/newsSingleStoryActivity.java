@@ -1,19 +1,13 @@
 package com.app.ssumobile.ssumobile_android.activity;
 
-import android.content.Context;
 import android.graphics.Color;
-import android.media.Image;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.webkit.WebView;
-import android.widget.ImageView;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import com.app.ssumobile.ssumobile_android.R;
-import com.koushikdutta.ion.Ion;
 
 public class newsSingleStoryActivity extends AppCompatActivity {
 
@@ -29,9 +23,9 @@ public class newsSingleStoryActivity extends AppCompatActivity {
 
         String htmlData= "<font color='white'>" +
                 "<h2>" +
-                getIntent().getStringExtra("Title") +
+                getIntent().getStringExtra("title") +
                 "</h2> <br>" +
-                getIntent().getStringExtra("Content") +
+                getIntent().getStringExtra("content") +
                 "</font>";
 
 

@@ -36,10 +36,10 @@ public class newsCardAdapter  extends RecyclerView.Adapter<newsCardAdapter.ViewH
     public void onBindViewHolder(ViewHolder holder, int position) {
         // - get element from your dataset at this position
         // - replace the contents of the view with that element
-        holder.Title.setText(mDataset.get(position).Title);
+        holder.Title.setText(mDataset.get(position).title);
 
         // check for image
-        if (mDataset.get(position).ImageURL != ""){
+        if (!mDataset.get(position).image_url.equals("")){
             // load image
 
             ImageView imageView = holder.storyImage;
@@ -48,7 +48,7 @@ public class newsCardAdapter  extends RecyclerView.Adapter<newsCardAdapter.ViewH
                     .error(R.drawable.ssu_paw)
                     //.animateLoad(null)
                     //.animateIn(null)
-                    .load(mDataset.get(position).ImageURL);
+                    .load(mDataset.get(position).image_url);
         }
 
 
@@ -84,17 +84,14 @@ public class newsCardAdapter  extends RecyclerView.Adapter<newsCardAdapter.ViewH
         Intent myIntent = new Intent(current, newsSingleStoryActivity.class);
 
         newsStoryModel story = (newsStoryModel) v.findViewById(R.id.newstitle).getTag();
-        myIntent.putExtra("Category", story.Category);
-        myIntent.putExtra("Content", story.Content);
-        myIntent.putExtra("ID", story.ID);
-        myIntent.putExtra("Published", story.Published);
-        myIntent.putExtra("ImageURL", story.ImageURL);
-        myIntent.putExtra("Link", story.Link);
-        myIntent.putExtra("Updated", story.Updated);
-        myIntent.putExtra("Title", story.Title);
-        myIntent.putExtra("Updated", story.Updated);
-        myIntent.putExtra("Summary", story.Summary);
-
+        myIntent.putExtra("category", story.category);
+        myIntent.putExtra("content", story.content);
+        myIntent.putExtra("id", story.id);
+        myIntent.putExtra("published", story.published);
+        myIntent.putExtra("image_url", story.image_url);
+        myIntent.putExtra("link", story.link);
+        myIntent.putExtra("title", story.title);
+        myIntent.putExtra("summary", story.summary);
 
         current.startActivity(myIntent);
     }

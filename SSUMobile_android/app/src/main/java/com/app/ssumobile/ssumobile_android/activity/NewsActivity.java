@@ -14,6 +14,8 @@ import com.app.ssumobile.ssumobile_android.models.newsStoryModel;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
+import org.apache.http.conn.ssl.SSLConnectionSocketFactory;
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.lang.reflect.Type;
@@ -52,7 +54,7 @@ public class NewsActivity extends AppCompatActivity {
         Thread runner = new Thread(new Runnable(){
             public void run()  {
                 try {
-                    sendGet("https://moonlight.cs.sonoma.edu/ssumobile/1_0/news.py");
+                    sendGet("https://moonlight.cs.sonoma.edu/api/v1/news/article/?format=json");
                 } catch (Throwable t) {
                     System.out.println(t.getCause());
                 }
@@ -100,11 +102,11 @@ public class NewsActivity extends AppCompatActivity {
         HttpsURLConnection con = (HttpsURLConnection) obj.openConnection();
         con.setRequestMethod("GET");  // optional default is GET
         con.setRequestProperty("User-Agent", USER_AGENT); //add request header
-        con.setHostnameVerifier(org.apache.http.conn.ssl.SSLSocketFactory.ALLOW_ALL_HOSTNAME_VERIFIER);
+        con.setHostnameVerifier(SSLConnectionSocketFactory.ALLOW_ALL_HOSTNAME_VERIFIER);
         BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
 
         String inputLine;
-        StringBuffer response = new StringBuffer();
+        StringBuilder response = new StringBuilder();
 
         while ((inputLine = in.readLine()) != null) {response.append(inputLine);}
         in.close();
@@ -115,8 +117,6 @@ public class NewsActivity extends AppCompatActivity {
 
     // parse out events from body
     private void parseOutEvents() throws org.json.JSONException {
-
-
         Gson gson = new Gson();
         Type listType = new TypeToken<List<newsStoryModel>>(){}.getType();
         List<newsStoryModel> array = (List<newsStoryModel>) gson.fromJson(body, listType);

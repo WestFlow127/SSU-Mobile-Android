@@ -70,9 +70,7 @@ public class DataProvider implements Serializable {
             String inputLine;
             StringBuilder response = new StringBuilder();
 
-            while ((inputLine = in.readLine()) != null) {
-                response.append(inputLine);
-            }
+            while ((inputLine = in.readLine()) != null) { response.append(inputLine); }
 
             in.close();
 
