@@ -22,19 +22,19 @@ public final class R {
         public static final int styleCaldroidWeekdayView = 0x7f01000a;
     }
     public static final class color {
-        public static final int caldroid_333 = 0x7f0a0013;
-        public static final int caldroid_555 = 0x7f0a0014;
-        public static final int caldroid_black = 0x7f0a0015;
-        public static final int caldroid_darker_gray = 0x7f0a0016;
-        public static final int caldroid_gray = 0x7f0a0017;
-        public static final int caldroid_holo_blue_dark = 0x7f0a0018;
-        public static final int caldroid_holo_blue_light = 0x7f0a0019;
-        public static final int caldroid_light_red = 0x7f0a001a;
-        public static final int caldroid_lighter_gray = 0x7f0a001b;
-        public static final int caldroid_middle_gray = 0x7f0a001c;
-        public static final int caldroid_sky_blue = 0x7f0a001d;
-        public static final int caldroid_transparent = 0x7f0a001e;
-        public static final int caldroid_white = 0x7f0a001f;
+        public static final int caldroid_333 = 0x7f0a0014;
+        public static final int caldroid_555 = 0x7f0a0015;
+        public static final int caldroid_black = 0x7f0a0016;
+        public static final int caldroid_darker_gray = 0x7f0a0017;
+        public static final int caldroid_gray = 0x7f0a0018;
+        public static final int caldroid_holo_blue_dark = 0x7f0a0019;
+        public static final int caldroid_holo_blue_light = 0x7f0a001a;
+        public static final int caldroid_light_red = 0x7f0a001b;
+        public static final int caldroid_lighter_gray = 0x7f0a001c;
+        public static final int caldroid_middle_gray = 0x7f0a001d;
+        public static final int caldroid_sky_blue = 0x7f0a001e;
+        public static final int caldroid_transparent = 0x7f0a001f;
+        public static final int caldroid_white = 0x7f0a0020;
         public static final int cell_text_color = 0x7f0a0067;
         public static final int cell_text_color_dark = 0x7f0a0068;
     }

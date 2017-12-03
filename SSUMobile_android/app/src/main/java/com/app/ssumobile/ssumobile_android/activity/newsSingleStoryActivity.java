@@ -18,21 +18,17 @@ public class newsSingleStoryActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_news_single_story);
 
-
         content = (WebView) findViewById(R.id.singlenewscontent);
 
         String htmlData= "<font color='white'>" +
                 "<h2>" +
                 getIntent().getStringExtra("title") +
-                "</h2> <br>" +
+                "</h2> <br> <style>img{display: inline;height: auto;max-width: 100%;}</style>" +
                 getIntent().getStringExtra("content") +
                 "</font>";
 
-
         content.loadData(htmlData, "text/html", null);
         content.setBackgroundColor(Color.parseColor("#001339"));
-
-
     }
 
     @Override

@@ -119,7 +119,7 @@ public class NewsActivity extends AppCompatActivity {
     private void parseOutEvents() throws org.json.JSONException {
         Gson gson = new Gson();
         Type listType = new TypeToken<List<newsStoryModel>>(){}.getType();
-        List<newsStoryModel> array = (List<newsStoryModel>) gson.fromJson(body, listType);
+        List<newsStoryModel> array = gson.fromJson(body, listType);
         for (newsStoryModel current : array){
             events.add(current);
         }

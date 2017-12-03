@@ -94,13 +94,13 @@ ADDED from C:\Users\WestFlow\Desktop\Repositories\SSU-Mobile-Android\SSUMobile_a
 activity#com.app.ssumobile.ssumobile_android.activity.NewsActivity
 ADDED from C:\Users\WestFlow\Desktop\Repositories\SSU-Mobile-Android\SSUMobile_android\app\src\main\AndroidManifest.xml:33:9-36:20
 	android:label
-		ADDED from C:\Users\WestFlow\Desktop\Repositories\SSU-Mobile-Android\SSUMobile_android\app\src\main\AndroidManifest.xml:35:13-45
+		ADDED from C:\Users\WestFlow\Desktop\Repositories\SSU-Mobile-Android\SSUMobile_android\app\src\main\AndroidManifest.xml:35:13-48
 	android:name
 		ADDED from C:\Users\WestFlow\Desktop\Repositories\SSU-Mobile-Android\SSUMobile_android\app\src\main\AndroidManifest.xml:34:13-50
 activity#com.app.ssumobile.ssumobile_android.activity.newsSingleStoryActivity
 ADDED from C:\Users\WestFlow\Desktop\Repositories\SSU-Mobile-Android\SSUMobile_android\app\src\main\AndroidManifest.xml:37:9-40:20
 	android:label
-		ADDED from C:\Users\WestFlow\Desktop\Repositories\SSU-Mobile-Android\SSUMobile_android\app\src\main\AndroidManifest.xml:39:13-45
+		ADDED from C:\Users\WestFlow\Desktop\Repositories\SSU-Mobile-Android\SSUMobile_android\app\src\main\AndroidManifest.xml:39:13-48
 	android:name
 		ADDED from C:\Users\WestFlow\Desktop\Repositories\SSU-Mobile-Android\SSUMobile_android\app\src\main\AndroidManifest.xml:38:13-61
 activity#com.app.ssumobile.ssumobile_android.activity.CalendarSingleDate

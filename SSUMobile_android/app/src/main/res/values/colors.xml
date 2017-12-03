@@ -6,5 +6,5 @@
     <item name="green" type="color">#4499CC00</item>
     <item name="darkgreen" type="color">#FF669900</item>
     <item name="ssublue" type="color">#001339</item>
-    <item name="ssublue_op" type="color">"#D9001339"</item>
+    <item name="OPssublue" type="color">#26555555</item>
 </resources>

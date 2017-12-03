@@ -4,6 +4,7 @@ import java.util.Comparator;
 
 /**
  * Created by ben on 11/12/15.
+ * Modified by Weston on 11/30/17
  */
 public class newsStoryModel {
     public String id;

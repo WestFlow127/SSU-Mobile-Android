@@ -27,8 +27,10 @@ public class newsCardAdapter  extends RecyclerView.Adapter<newsCardAdapter.ViewH
         // create a new view
         final View v =  LayoutInflater.from(parent.getContext()).inflate(R.layout.newscardview, parent, false);
         v.setOnClickListener(this);
+
         // set the view's size, margins, paddings and layout parameters here
         ViewHolder vh = new ViewHolder(v);
+
         return vh;
     }
 
@@ -46,8 +48,6 @@ public class newsCardAdapter  extends RecyclerView.Adapter<newsCardAdapter.ViewH
             Ion.with(imageView)
                     .placeholder(R.drawable.ssu_paw)
                     .error(R.drawable.ssu_paw)
-                    //.animateLoad(null)
-                    //.animateIn(null)
                     .load(mDataset.get(position).image_url);
         }
 
