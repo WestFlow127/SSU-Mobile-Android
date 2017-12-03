@@ -27,7 +27,7 @@ public class newsSingleStoryActivity extends AppCompatActivity {
                 getIntent().getStringExtra("content") +
                 "</font>";
 
-        content.loadData(htmlData, "text/html", null);
+        content.loadData(htmlData, "text/html; charset=UTF-8", null);
         content.setBackgroundColor(Color.parseColor("#001339"));
     }
 
