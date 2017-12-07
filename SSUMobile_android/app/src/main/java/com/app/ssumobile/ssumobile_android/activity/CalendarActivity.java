@@ -4,7 +4,6 @@ import android.annotation.TargetApi;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -15,11 +14,9 @@ import com.app.ssumobile.ssumobile_android.R;
 import com.app.ssumobile.ssumobile_android.service.RestClient;
 import com.roomorama.caldroid.CaldroidFragment;
 import com.roomorama.caldroid.CaldroidListener;
+
 import java.util.Calendar;
 import java.util.Date;
-
-import retrofit.RetrofitError;
-import retrofit.client.Response;
 
 
 public class CalendarActivity extends AppCompatActivity {
@@ -39,12 +36,9 @@ public class CalendarActivity extends AppCompatActivity {
 
         initializeCalendar();
 
-
-
-       restClient = new RestClient();
+        restClient = new RestClient();
 
         initializeListener();
-
 
         boolean isEvent = getIntent().getBooleanExtra("noEvent", false);
         if (isEvent == true){
@@ -92,7 +86,7 @@ public class CalendarActivity extends AppCompatActivity {
         t.commit();
     }
         
-        public void initializeListener() {
+    public void initializeListener() {
         CaldroidListener listener = new CaldroidListener() {
 
             @Override

@@ -1,23 +1,14 @@
 package com.app.ssumobile.ssumobile_android.adapters;
 
-import android.app.Activity;
-import android.app.Dialog;
 import android.content.DialogInterface;
-import android.content.Intent;
-import android.graphics.Color;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.RecyclerView;
-import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.app.ssumobile.ssumobile_android.R;
-import com.app.ssumobile.ssumobile_android.activity.CalendarSingleDate;
-import com.app.ssumobile.ssumobile_android.activity.calendarSingleEvent;
 import com.app.ssumobile.ssumobile_android.models.calendarEventModel;
 
 import java.util.ArrayList;
@@ -33,7 +24,7 @@ public class calendarCardAdapter extends RecyclerView.Adapter<calendarCardAdapte
 
     @Override
     public void onClick(View v) {
-        calendarEventModel currentEvent = mDataset.get((Integer) v.findViewById(R.id.Title).getTag());
+        calendarEventModel currentEvent = mDataset.get((Integer) v.findViewById(R.id.title).getTag());
 
 
         String location = currentEvent.getLocation();
@@ -85,16 +76,16 @@ public class calendarCardAdapter extends RecyclerView.Adapter<calendarCardAdapte
     // you provide access to all the views for a data item in a view holder
     public static class ViewHolder extends RecyclerView.ViewHolder {
         // each data item is just a string in this case
-        public TextView StartsOn;
-        public TextView Title;
+        public TextView starts_date;
+        public TextView title;
 
         Integer pos;
 
 
         public ViewHolder(View itemView) {
             super(itemView);
-            StartsOn = (TextView) itemView.findViewById(R.id.StartsOn);
-            Title = (TextView) itemView.findViewById(R.id.Title);
+            starts_date = (TextView) itemView.findViewById(R.id.StartsOn);
+            title = (TextView) itemView.findViewById(R.id.Title);
         }
     }
 
@@ -128,12 +119,12 @@ public class calendarCardAdapter extends RecyclerView.Adapter<calendarCardAdapte
     public void onBindViewHolder(ViewHolder holder, int position) {
         // - get element from your dataset at this position
         // - replace the contents of the view with that element
-        holder.Title.setText(mDataset.get(position).getTitle());
-        holder.StartsOn.setText(mDataset.get(position).getStartsOn());
+        holder.title.setText(mDataset.get(position).getTitle());
+        holder.starts_date.setText(mDataset.get(position).getStartsOn());
         //holder.pos = position;
 
         // save reference to event in title
-        holder.Title.setTag(position);
+        holder.title.setTag(position);
 
     }
 

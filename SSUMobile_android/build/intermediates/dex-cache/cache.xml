@@ -394,7 +394,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
-        sha1="b5c78d34ff916e99a8360b3e5250806a1f043695">
+        sha1="c89ae8d1e20f34dd31e0fb56d38f75a2728b2c84">
         <dex dex="C:\Users\WestFlow\Desktop\Repositories\SSU-Mobile-Android\SSUMobile_android\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_4407bdb49d88adabbad6214707315ad47dcf0440\classes.dex" />
     </item>
     <item

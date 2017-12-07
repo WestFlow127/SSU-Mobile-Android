@@ -1,14 +1,12 @@
 package com.app.ssumobile.ssumobile_android.activity;
 
 import android.annotation.TargetApi;
-import android.app.ActionBar;
 import android.os.Build;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.app.ssumobile.ssumobile_android.R;
 
@@ -27,24 +25,24 @@ public class calendarSingleEvent extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calendar_single_event);
 
-        String msg = getIntent().getStringExtra("Location");
+        String msg = getIntent().getStringExtra("location");
         location = (TextView) findViewById(R.id.singleLocation);
         location.setText("Location: " + msg);
 
 
-        msg = getIntent().getStringExtra("Description");
+        msg = getIntent().getStringExtra("description");
         descrip = (TextView) findViewById(R.id.singleDescription);
         descrip.setText(msg);
 
-        msg = getIntent().getStringExtra("EndsOn").substring(11);
+        msg = getIntent().getStringExtra("ends_date").substring(11);
         endtime = (TextView) findViewById(R.id.singleEndsOn);
         endtime.setText("Ends: " +msg);
 
-        msg = getIntent().getStringExtra("StartsOn").substring(11);
+        msg = getIntent().getStringExtra("start_date").substring(11);
         starttime = (TextView) findViewById(R.id.singleStartsOn);
         starttime.setText("Starts: " + msg);
 
-        msg = getIntent().getStringExtra("Title");
+        msg = getIntent().getStringExtra("title");
         title = (TextView) findViewById(R.id.singleTitle);
         title.setText(msg);
     }

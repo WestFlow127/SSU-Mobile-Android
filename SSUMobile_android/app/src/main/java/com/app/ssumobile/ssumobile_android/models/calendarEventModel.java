@@ -13,82 +13,71 @@ public class calendarEventModel implements Parcelable{
 
 
     public String getStartsOn() {
-        return StartsOn;
+        return start_date;
     }
 
     public void setStartsOn(String startsOn) {
-        StartsOn = startsOn;
+        start_date = startsOn;
     }
 
     public String getDescription() {
-        return Description;
+        return description;
     }
 
-    public void setDescription(String description) {
-        Description = description;
+    public void setDescription(String Description) {
+        description = Description;
     }
 
-    public String getTitle() {
-        return Title;
-    }
+    public String getTitle() { return title; }
 
-    public void setTitle(String title) {
-        Title = title;
-    }
-
-    public String getDeleted() {
-        return Deleted;
-    }
-
-    public void setDeleted(String deleted) {
-        Deleted = deleted;
+    public void setTitle(String Title) {
+        title = Title;
     }
 
     public String getCreated() {
-        return Created;
+        return created;
     }
 
-    public void setCreated(String created) {
-        Created = created;
+    public void setCreated(String Created) {
+        created = Created;
     }
 
     public String getLocation() {
-        return Location;
+        return location;
     }
 
-    public void setLocation(String location) {
-        Location = location;
+    public void setLocation(String Location) {
+        location = Location;
     }
 
     public String getId() {
-        return Id;
+        return id;
     }
 
-    public void setId(String id) {
-        Id = id;
+    public void setId(String ID) {
+        id = ID;
     }
 
     public String getEndsOn() {
-        return EndsOn;
+        return end_date;
     }
 
     public void setEndsOn(String endsOn) {
-        EndsOn = endsOn;
+        end_date = endsOn;
     }
 
-    private String StartsOn;
-    private String Description;
-    private String Title;
-    private String Deleted;
-    private String Created;
-    private String Location;
-    private String Id;
-    private String EndsOn;
+    private String start_date;
+    private String description;
+    private String title;
+    private String created;
+    private String location;
+    private String id;
+    private String end_date;
 
     public calendarEventModel(Parcel in) {
         readFromParcel(in);
     }
-    public calendarEventModel() { ; };
+    public calendarEventModel() {  }
 
     @Override
     public int describeContents() {
@@ -100,24 +89,22 @@ public class calendarEventModel implements Parcelable{
         dest.writeString(getStartsOn());
         dest.writeString(getDescription());
         dest.writeString(getTitle());
-        dest.writeString(getDeleted());
         dest.writeString(getLocation());
         dest.writeString(getId());
         dest.writeString(getEndsOn());
     }
 
     private void readFromParcel(Parcel in) {
-// We just need to read back each
+        // We just need to read back each
         // field in the order that it was
         // written to the parcel
-        StartsOn = in.readString();
-        Description= in.readString();
-        Title= in.readString();
-        Deleted= in.readString();
-        Created= in.readString();
-        Location= in.readString();
-        Id= in.readString();
-        EndsOn= in.readString();
+        start_date = in.readString();
+        description = in.readString();
+        title = in.readString();
+        created = in.readString();
+        location = in.readString();
+        id = in.readString();
+        end_date = in.readString();
     }
 
     public static final Parcelable.Creator<calendarEventModel> CREATOR = new Parcelable.Creator<calendarEventModel>() {
@@ -133,7 +120,7 @@ public class calendarEventModel implements Parcelable{
 
     public static Comparator<calendarEventModel> COMPARE_BY_START = new Comparator<calendarEventModel>() {
         public int compare(calendarEventModel one, calendarEventModel other) {
-            return one.StartsOn.compareTo(other.StartsOn);
+            return one.start_date.compareTo(other.start_date);
         }
     };
 
