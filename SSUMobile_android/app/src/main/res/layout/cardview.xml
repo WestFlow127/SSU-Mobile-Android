@@ -5,41 +5,44 @@
     android:layout_marginTop = "10dp"
     android:gravity="center_vertical"
     android:orientation="horizontal"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
     <!-- A CardView that contains a TextView -->
 
 
     <android.support.v7.widget.CardView
-        xmlns:card_view="http://schemas.android.com/apk/res-auto"
         android:id="@+id/card_view"
-        android:layout_gravity="center"
         android:layout_width="fill_parent"
         android:layout_height="100dp"
+        android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="#001339"
-        card_view:cardCornerRadius="2dp"
+        card_view:cardBackgroundColor="@color/OPssublue"
+        card_view:cardCornerRadius="4dp"
         card_view:contentPadding="10dp">
-<RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_gravity="center_vertical"
-    android:layout_height="match_parent">
-        <TextView
-            android:id="@+id/Title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:textColor="#001339"
-            android:layout_alignParentTop="true" />
-        <TextView
-            android:id="@+id/StartsOn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textStyle="italic"
-            android:layout_alignParentBottom="true"
-            android:layout_marginTop="10dp"
-            android:layout_below="@+id/Title"
-            android:textColor="#001339" />
 
-</RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:textColor="@color/caldroid_white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/StartsOn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/Title"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/caldroid_white"
+                android:textStyle="italic" />
+
+        </RelativeLayout>
     </android.support.v7.widget.CardView>
 </LinearLayout>

@@ -1,18 +1,40 @@
 -- Merging decision tree log ---
 manifest
 ADDED from C:\Users\WestFlow\Desktop\Repositories\SSU-Mobile-Android\SSUMobile_android\app\src\main\AndroidManifest.xml:2:1-99:12
+INJECTED from C:\Users\WestFlow\Desktop\Repositories\SSU-Mobile-Android\SSUMobile_android\app\src\main\AndroidManifest.xml:2:1-99:12
+INJECTED from C:\Users\WestFlow\Desktop\Repositories\SSU-Mobile-Android\SSUMobile_android\app\src\main\AndroidManifest.xml:2:1-99:12
+INJECTED from C:\Users\WestFlow\Desktop\Repositories\SSU-Mobile-Android\SSUMobile_android\app\src\main\AndroidManifest.xml:2:1-99:12
+MERGED from [com.android.support:appcompat-v7:25.4.0] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.4.0.aar\869ed2133c02d31df409b97a849f384e\AndroidManifest.xml:17:1-31:12
+MERGED from [com.roomorama:caldroid:2.2.1] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\caldroid-2.2.1.aar\df72132f75b2df2c860b5c5f113d6e45\AndroidManifest.xml:2:1-11:12
+MERGED from [io.reactivex:rxandroid:1.0.1] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\rxandroid-1.0.1.aar\594d320ea3989c2ee16d7fa9f315ab9f\AndroidManifest.xml:15:1-21:12
+MERGED from [com.android.support:cardview-v7:25.4.0] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\cardview-v7-25.4.0.aar\a79b9ad68ce058f82473efee90f94a40\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:recyclerview-v7:25.4.0] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.4.0.aar\22c4e6468441063d63e6a1765aea47bc\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:multidex:1.0.2] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\multidex-1.0.2.aar\38bd1744914aafeafaf47f8ea7f57d7a\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:25.4.0] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.4.0.aar\6d2a1603dfecf2a7ede339a51da87020\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-vector-drawable:25.4.0] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.4.0.aar\306937d869352af0c1ccb6b2a6271cd7\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:25.4.0] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\support-v4-25.4.0.aar\1622d592ab5b912edbd31dd44cc2ef28\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-fragment:25.4.0] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\support-fragment-25.4.0.aar\403ccbdcc679fbd5362ef96d8271a798\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-ui:25.4.0] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.4.0.aar\fb921d87e07d94c7c241555aed7d88f0\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-media-compat:25.4.0] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.4.0.aar\cd1df8ca0110626ca2f55b10c05b0790\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:25.4.0] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.4.0.aar\daeead763ad66ca4622b944cc610cb56\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-compat:25.4.0] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\support-compat-25.4.0.aar\31420742d22699cee060fd4d20a66bfd\AndroidManifest.xml:17:1-31:12
+INJECTED from C:\Users\WestFlow\Desktop\Repositories\SSU-Mobile-Android\SSUMobile_android\app\src\main\AndroidManifest.xml:2:1-99:12
+INJECTED from C:\Users\WestFlow\Desktop\Repositories\SSU-Mobile-Android\SSUMobile_android\app\src\main\AndroidManifest.xml:2:1-99:12
+INJECTED from C:\Users\WestFlow\Desktop\Repositories\SSU-Mobile-Android\SSUMobile_android\app\src\main\AndroidManifest.xml:2:1-99:12
 	package
 		ADDED from C:\Users\WestFlow\Desktop\Repositories\SSU-Mobile-Android\SSUMobile_android\app\src\main\AndroidManifest.xml:3:5-50
 		INJECTED from C:\Users\WestFlow\Desktop\Repositories\SSU-Mobile-Android\SSUMobile_android\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\WestFlow\Desktop\Repositories\SSU-Mobile-Android\SSUMobile_android\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\WestFlow\Desktop\Repositories\SSU-Mobile-Android\SSUMobile_android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\WestFlow\Desktop\Repositories\SSU-Mobile-Android\SSUMobile_android\app\src\main\AndroidManifest.xml:2:1-99:12
+		INJECTED from C:\Users\WestFlow\Desktop\Repositories\SSU-Mobile-Android\SSUMobile_android\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\WestFlow\Desktop\Repositories\SSU-Mobile-Android\SSUMobile_android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\WestFlow\Desktop\Repositories\SSU-Mobile-Android\SSUMobile_android\app\src\main\AndroidManifest.xml:2:1-99:12
 		INJECTED from C:\Users\WestFlow\Desktop\Repositories\SSU-Mobile-Android\SSUMobile_android\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\WestFlow\Desktop\Repositories\SSU-Mobile-Android\SSUMobile_android\app\src\main\AndroidManifest.xml:2:11-69
-	android:versionCode
-		INJECTED from C:\Users\WestFlow\Desktop\Repositories\SSU-Mobile-Android\SSUMobile_android\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\WestFlow\Desktop\Repositories\SSU-Mobile-Android\SSUMobile_android\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.READ_CALENDAR
 ADDED from C:\Users\WestFlow\Desktop\Repositories\SSU-Mobile-Android\SSUMobile_android\app\src\main\AndroidManifest.xml:5:5-72
 	android:name
@@ -51,22 +73,34 @@ ADDED from C:\Users\WestFlow\Desktop\Repositories\SSU-Mobile-Android\SSUMobile_a
 		ADDED from C:\Users\WestFlow\Desktop\Repositories\SSU-Mobile-Android\SSUMobile_android\app\src\main\AndroidManifest.xml:13:22-77
 application
 ADDED from C:\Users\WestFlow\Desktop\Repositories\SSU-Mobile-Android\SSUMobile_android\app\src\main\AndroidManifest.xml:15:5-97:19
-MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\WestFlow\.android\build-cache\f5f9c6fbdc32a0359c79a1839666b73ea25e62ba\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\WestFlow\.android\build-cache\32b5738a9e7c026b25176b1fa827933a3d43085a\output\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\WestFlow\.android\build-cache\c4fc736d72c64a2a00341d41daf97d8d2ada8a61\output\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-v4:25.3.1] C:\Users\WestFlow\.android\build-cache\cc77a10a8f60747d1fd76729afa2b2e5964e3c1d\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\WestFlow\.android\build-cache\d475091ea0fbd9b581e0b5d367bd646a63a45d73\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\WestFlow\.android\build-cache\e51a0ae299d44c339927a563e0d8e563626be3f9\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\WestFlow\.android\build-cache\6408021001f361d72fb2d20240d882964d2c4eae\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\WestFlow\.android\build-cache\ebcd9c9780502e96ea7ecbeb1fb1ebb336ca22e4\output\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\WestFlow\.android\build-cache\69f5faad9e15710198f199447459f5d0d1dc1881\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-compat:25.3.1] C:\Users\WestFlow\.android\build-cache\3a90d3c533cd4b41599f921851afa59e4bfdc192\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:25.4.0] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.4.0.aar\869ed2133c02d31df409b97a849f384e\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:appcompat-v7:25.4.0] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.4.0.aar\869ed2133c02d31df409b97a849f384e\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:cardview-v7:25.4.0] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\cardview-v7-25.4.0.aar\a79b9ad68ce058f82473efee90f94a40\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:cardview-v7:25.4.0] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\cardview-v7-25.4.0.aar\a79b9ad68ce058f82473efee90f94a40\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:recyclerview-v7:25.4.0] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.4.0.aar\22c4e6468441063d63e6a1765aea47bc\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:recyclerview-v7:25.4.0] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.4.0.aar\22c4e6468441063d63e6a1765aea47bc\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:animated-vector-drawable:25.4.0] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.4.0.aar\6d2a1603dfecf2a7ede339a51da87020\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:animated-vector-drawable:25.4.0] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.4.0.aar\6d2a1603dfecf2a7ede339a51da87020\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:25.4.0] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.4.0.aar\306937d869352af0c1ccb6b2a6271cd7\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:25.4.0] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.4.0.aar\306937d869352af0c1ccb6b2a6271cd7\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-v4:25.4.0] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\support-v4-25.4.0.aar\1622d592ab5b912edbd31dd44cc2ef28\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:25.4.0] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\support-v4-25.4.0.aar\1622d592ab5b912edbd31dd44cc2ef28\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:25.4.0] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\support-fragment-25.4.0.aar\403ccbdcc679fbd5362ef96d8271a798\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:25.4.0] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\support-fragment-25.4.0.aar\403ccbdcc679fbd5362ef96d8271a798\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:25.4.0] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.4.0.aar\fb921d87e07d94c7c241555aed7d88f0\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:25.4.0] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.4.0.aar\fb921d87e07d94c7c241555aed7d88f0\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:25.4.0] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.4.0.aar\cd1df8ca0110626ca2f55b10c05b0790\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:25.4.0] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.4.0.aar\cd1df8ca0110626ca2f55b10c05b0790\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:25.4.0] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.4.0.aar\daeead763ad66ca4622b944cc610cb56\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:25.4.0] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.4.0.aar\daeead763ad66ca4622b944cc610cb56\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:25.4.0] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\support-compat-25.4.0.aar\31420742d22699cee060fd4d20a66bfd\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:25.4.0] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\support-compat-25.4.0.aar\31420742d22699cee060fd4d20a66bfd\AndroidManifest.xml:25:5-29:19
 	android:label
 		ADDED from C:\Users\WestFlow\Desktop\Repositories\SSU-Mobile-Android\SSUMobile_android\app\src\main\AndroidManifest.xml:18:9-41
-	android:allowBackup
-		ADDED from C:\Users\WestFlow\Desktop\Repositories\SSU-Mobile-Android\SSUMobile_android\app\src\main\AndroidManifest.xml:16:9-35
 	android:icon
 		ADDED from C:\Users\WestFlow\Desktop\Repositories\SSU-Mobile-Android\SSUMobile_android\app\src\main\AndroidManifest.xml:17:9-47
+	android:allowBackup
+		ADDED from C:\Users\WestFlow\Desktop\Repositories\SSU-Mobile-Android\SSUMobile_android\app\src\main\AndroidManifest.xml:16:9-35
 	android:theme
 		ADDED from C:\Users\WestFlow\Desktop\Repositories\SSU-Mobile-Android\SSUMobile_android\app\src\main\AndroidManifest.xml:19:9-40
 activity#com.app.ssumobile.ssumobile_android.activity.StartScreenActivity
@@ -88,7 +122,7 @@ ADDED from C:\Users\WestFlow\Desktop\Repositories\SSU-Mobile-Android\SSUMobile_a
 activity#com.app.ssumobile.ssumobile_android.activity.CalendarActivity
 ADDED from C:\Users\WestFlow\Desktop\Repositories\SSU-Mobile-Android\SSUMobile_android\app\src\main\AndroidManifest.xml:29:9-32:20
 	android:label
-		ADDED from C:\Users\WestFlow\Desktop\Repositories\SSU-Mobile-Android\SSUMobile_android\app\src\main\AndroidManifest.xml:31:13-45
+		ADDED from C:\Users\WestFlow\Desktop\Repositories\SSU-Mobile-Android\SSUMobile_android\app\src\main\AndroidManifest.xml:31:13-49
 	android:name
 		ADDED from C:\Users\WestFlow\Desktop\Repositories\SSU-Mobile-Android\SSUMobile_android\app\src\main\AndroidManifest.xml:30:13-54
 activity#com.app.ssumobile.ssumobile_android.activity.NewsActivity
@@ -106,7 +140,7 @@ ADDED from C:\Users\WestFlow\Desktop\Repositories\SSU-Mobile-Android\SSUMobile_a
 activity#com.app.ssumobile.ssumobile_android.activity.CalendarSingleDate
 ADDED from C:\Users\WestFlow\Desktop\Repositories\SSU-Mobile-Android\SSUMobile_android\app\src\main\AndroidManifest.xml:41:9-44:20
 	android:label
-		ADDED from C:\Users\WestFlow\Desktop\Repositories\SSU-Mobile-Android\SSUMobile_android\app\src\main\AndroidManifest.xml:43:13-45
+		ADDED from C:\Users\WestFlow\Desktop\Repositories\SSU-Mobile-Android\SSUMobile_android\app\src\main\AndroidManifest.xml:43:13-47
 	android:name
 		ADDED from C:\Users\WestFlow\Desktop\Repositories\SSU-Mobile-Android\SSUMobile_android\app\src\main\AndroidManifest.xml:42:13-56
 activity#com.app.ssumobile.ssumobile_android.activity.calendarSingleEvent
@@ -189,39 +223,71 @@ ADDED from C:\Users\WestFlow\Desktop\Repositories\SSU-Mobile-Android\SSUMobile_a
 		ADDED from C:\Users\WestFlow\Desktop\Repositories\SSU-Mobile-Android\SSUMobile_android\app\src\main\AndroidManifest.xml:94:13-51
 uses-sdk
 INJECTED from C:\Users\WestFlow\Desktop\Repositories\SSU-Mobile-Android\SSUMobile_android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\WestFlow\.android\build-cache\f5f9c6fbdc32a0359c79a1839666b73ea25e62ba\output\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\WestFlow\.android\build-cache\32b5738a9e7c026b25176b1fa827933a3d43085a\output\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\WestFlow\.android\build-cache\c4fc736d72c64a2a00341d41daf97d8d2ada8a61\output\AndroidManifest.xml:20:5-43
-MERGED from [com.roomorama:caldroid:2.2.1] C:\Users\WestFlow\.android\build-cache\0fb18741f3148dc04cd11c6f6097a892c3d32289\output\AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:support-v4:25.3.1] C:\Users\WestFlow\.android\build-cache\cc77a10a8f60747d1fd76729afa2b2e5964e3c1d\output\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\WestFlow\.android\build-cache\d475091ea0fbd9b581e0b5d367bd646a63a45d73\output\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\WestFlow\.android\build-cache\e51a0ae299d44c339927a563e0d8e563626be3f9\output\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\WestFlow\.android\build-cache\6408021001f361d72fb2d20240d882964d2c4eae\output\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\WestFlow\.android\build-cache\ebcd9c9780502e96ea7ecbeb1fb1ebb336ca22e4\output\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\WestFlow\.android\build-cache\5cd4fcb445097f1a3f3b65c8a34178282dcd6ba2\output\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\WestFlow\.android\build-cache\69f5faad9e15710198f199447459f5d0d1dc1881\output\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-compat:25.3.1] C:\Users\WestFlow\.android\build-cache\3a90d3c533cd4b41599f921851afa59e4bfdc192\output\AndroidManifest.xml:21:5-23:58
+INJECTED from C:\Users\WestFlow\Desktop\Repositories\SSU-Mobile-Android\SSUMobile_android\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\WestFlow\Desktop\Repositories\SSU-Mobile-Android\SSUMobile_android\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:25.4.0] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.4.0.aar\869ed2133c02d31df409b97a849f384e\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:25.4.0] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.4.0.aar\869ed2133c02d31df409b97a849f384e\AndroidManifest.xml:21:5-23:78
+MERGED from [com.roomorama:caldroid:2.2.1] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\caldroid-2.2.1.aar\df72132f75b2df2c860b5c5f113d6e45\AndroidManifest.xml:7:5-9:41
+MERGED from [com.roomorama:caldroid:2.2.1] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\caldroid-2.2.1.aar\df72132f75b2df2c860b5c5f113d6e45\AndroidManifest.xml:7:5-9:41
+MERGED from [io.reactivex:rxandroid:1.0.1] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\rxandroid-1.0.1.aar\594d320ea3989c2ee16d7fa9f315ab9f\AndroidManifest.xml:19:5-43
+MERGED from [io.reactivex:rxandroid:1.0.1] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\rxandroid-1.0.1.aar\594d320ea3989c2ee16d7fa9f315ab9f\AndroidManifest.xml:19:5-43
+MERGED from [com.android.support:cardview-v7:25.4.0] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\cardview-v7-25.4.0.aar\a79b9ad68ce058f82473efee90f94a40\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:cardview-v7:25.4.0] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\cardview-v7-25.4.0.aar\a79b9ad68ce058f82473efee90f94a40\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:25.4.0] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.4.0.aar\22c4e6468441063d63e6a1765aea47bc\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:25.4.0] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.4.0.aar\22c4e6468441063d63e6a1765aea47bc\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:multidex:1.0.2] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\multidex-1.0.2.aar\38bd1744914aafeafaf47f8ea7f57d7a\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:multidex:1.0.2] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\multidex-1.0.2.aar\38bd1744914aafeafaf47f8ea7f57d7a\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:animated-vector-drawable:25.4.0] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.4.0.aar\6d2a1603dfecf2a7ede339a51da87020\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:25.4.0] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.4.0.aar\6d2a1603dfecf2a7ede339a51da87020\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.4.0] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.4.0.aar\306937d869352af0c1ccb6b2a6271cd7\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-vector-drawable:25.4.0] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.4.0.aar\306937d869352af0c1ccb6b2a6271cd7\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:25.4.0] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\support-v4-25.4.0.aar\1622d592ab5b912edbd31dd44cc2ef28\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:25.4.0] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\support-v4-25.4.0.aar\1622d592ab5b912edbd31dd44cc2ef28\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.4.0] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\support-fragment-25.4.0.aar\403ccbdcc679fbd5362ef96d8271a798\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:25.4.0] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\support-fragment-25.4.0.aar\403ccbdcc679fbd5362ef96d8271a798\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-ui:25.4.0] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.4.0.aar\fb921d87e07d94c7c241555aed7d88f0\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:25.4.0] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.4.0.aar\fb921d87e07d94c7c241555aed7d88f0\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-media-compat:25.4.0] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.4.0.aar\cd1df8ca0110626ca2f55b10c05b0790\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:25.4.0] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.4.0.aar\cd1df8ca0110626ca2f55b10c05b0790\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:25.4.0] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.4.0.aar\daeead763ad66ca4622b944cc610cb56\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:25.4.0] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.4.0.aar\daeead763ad66ca4622b944cc610cb56\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:25.4.0] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\support-compat-25.4.0.aar\31420742d22699cee060fd4d20a66bfd\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.4.0] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\support-compat-25.4.0.aar\31420742d22699cee060fd4d20a66bfd\AndroidManifest.xml:21:5-23:58
+INJECTED from C:\Users\WestFlow\Desktop\Repositories\SSU-Mobile-Android\SSUMobile_android\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\WestFlow\Desktop\Repositories\SSU-Mobile-Android\SSUMobile_android\app\src\main\AndroidManifest.xml
 	tools:overrideLibrary
-		ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\WestFlow\.android\build-cache\f5f9c6fbdc32a0359c79a1839666b73ea25e62ba\output\AndroidManifest.xml:23:9-75
+		ADDED from [com.android.support:appcompat-v7:25.4.0] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.4.0.aar\869ed2133c02d31df409b97a849f384e\AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
 		INJECTED from C:\Users\WestFlow\Desktop\Repositories\SSU-Mobile-Android\SSUMobile_android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\WestFlow\Desktop\Repositories\SSU-Mobile-Android\SSUMobile_android\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\WestFlow\Desktop\Repositories\SSU-Mobile-Android\SSUMobile_android\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
 		INJECTED from C:\Users\WestFlow\Desktop\Repositories\SSU-Mobile-Android\SSUMobile_android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\WestFlow\Desktop\Repositories\SSU-Mobile-Android\SSUMobile_android\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\WestFlow\Desktop\Repositories\SSU-Mobile-Android\SSUMobile_android\app\src\main\AndroidManifest.xml
 meta-data#android.support.VERSION
-ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\WestFlow\.android\build-cache\f5f9c6fbdc32a0359c79a1839666b73ea25e62ba\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\WestFlow\.android\build-cache\32b5738a9e7c026b25176b1fa827933a3d43085a\output\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\WestFlow\.android\build-cache\c4fc736d72c64a2a00341d41daf97d8d2ada8a61\output\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:support-v4:25.3.1] C:\Users\WestFlow\.android\build-cache\cc77a10a8f60747d1fd76729afa2b2e5964e3c1d\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\WestFlow\.android\build-cache\d475091ea0fbd9b581e0b5d367bd646a63a45d73\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\WestFlow\.android\build-cache\e51a0ae299d44c339927a563e0d8e563626be3f9\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\WestFlow\.android\build-cache\6408021001f361d72fb2d20240d882964d2c4eae\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\WestFlow\.android\build-cache\ebcd9c9780502e96ea7ecbeb1fb1ebb336ca22e4\output\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\WestFlow\.android\build-cache\5cd4fcb445097f1a3f3b65c8a34178282dcd6ba2\output\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\WestFlow\.android\build-cache\69f5faad9e15710198f199447459f5d0d1dc1881\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-compat:25.3.1] C:\Users\WestFlow\.android\build-cache\3a90d3c533cd4b41599f921851afa59e4bfdc192\output\AndroidManifest.xml:25:5-27:34
+ADDED from [com.android.support:appcompat-v7:25.4.0] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.4.0.aar\869ed2133c02d31df409b97a849f384e\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:cardview-v7:25.4.0] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\cardview-v7-25.4.0.aar\a79b9ad68ce058f82473efee90f94a40\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:cardview-v7:25.4.0] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\cardview-v7-25.4.0.aar\a79b9ad68ce058f82473efee90f94a40\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:recyclerview-v7:25.4.0] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.4.0.aar\22c4e6468441063d63e6a1765aea47bc\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:recyclerview-v7:25.4.0] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.4.0.aar\22c4e6468441063d63e6a1765aea47bc\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:animated-vector-drawable:25.4.0] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.4.0.aar\6d2a1603dfecf2a7ede339a51da87020\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:animated-vector-drawable:25.4.0] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.4.0.aar\6d2a1603dfecf2a7ede339a51da87020\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:25.4.0] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.4.0.aar\306937d869352af0c1ccb6b2a6271cd7\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:25.4.0] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.4.0.aar\306937d869352af0c1ccb6b2a6271cd7\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-v4:25.4.0] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\support-v4-25.4.0.aar\1622d592ab5b912edbd31dd44cc2ef28\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-v4:25.4.0] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\support-v4-25.4.0.aar\1622d592ab5b912edbd31dd44cc2ef28\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:25.4.0] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\support-fragment-25.4.0.aar\403ccbdcc679fbd5362ef96d8271a798\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:25.4.0] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\support-fragment-25.4.0.aar\403ccbdcc679fbd5362ef96d8271a798\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:25.4.0] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.4.0.aar\fb921d87e07d94c7c241555aed7d88f0\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:25.4.0] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.4.0.aar\fb921d87e07d94c7c241555aed7d88f0\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:25.4.0] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.4.0.aar\cd1df8ca0110626ca2f55b10c05b0790\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:25.4.0] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.4.0.aar\cd1df8ca0110626ca2f55b10c05b0790\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:25.4.0] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.4.0.aar\daeead763ad66ca4622b944cc610cb56\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:25.4.0] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.4.0.aar\daeead763ad66ca4622b944cc610cb56\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:25.4.0] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\support-compat-25.4.0.aar\31420742d22699cee060fd4d20a66bfd\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:25.4.0] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\support-compat-25.4.0.aar\31420742d22699cee060fd4d20a66bfd\AndroidManifest.xml:26:9-28:38
 	android:value
-		ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\WestFlow\.android\build-cache\f5f9c6fbdc32a0359c79a1839666b73ea25e62ba\output\AndroidManifest.xml:27:9-31
+		ADDED from [com.android.support:appcompat-v7:25.4.0] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.4.0.aar\869ed2133c02d31df409b97a849f384e\AndroidManifest.xml:28:13-35
 	android:name
-		ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\WestFlow\.android\build-cache\f5f9c6fbdc32a0359c79a1839666b73ea25e62ba\output\AndroidManifest.xml:26:9-47
+		ADDED from [com.android.support:appcompat-v7:25.4.0] C:\Users\WestFlow\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.4.0.aar\869ed2133c02d31df409b97a849f384e\AndroidManifest.xml:27:13-51

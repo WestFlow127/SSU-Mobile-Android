@@ -31,7 +31,6 @@
     <string name="add_to_contacts">"Add To Contacts"</string>
     <string name="department_button">"Department"</string>
     <string name="office_button">"Office"</string>
-    <string name="mockName">"John Doe"</string>
     <string name="web_site">"Website Button"</string>
     <string name="display_name">Display Name</string>
     <string name="title_activity_resources">resourcesActivity</string>
@@ -39,4 +38,6 @@
     <string name="building_button">"Building"</string>
     <string name="No_Admin">"No Admin Name Available"</string>
     <string name="No_Dean">"No Dean Name Available"</string>
+    <string name="SSU_Events">"SSU Events</string>
+    <string name="SSU_Calender">SSU Calendar</string>
 </resources>
